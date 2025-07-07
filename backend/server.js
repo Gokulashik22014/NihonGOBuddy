@@ -9,6 +9,7 @@ app.use(express.json())
 app.get("/message",(req,res)=>{
     res.json({message:"hello world"})
 })
+
 //use the static build of front end
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 app.get('/', (req, res) => {
