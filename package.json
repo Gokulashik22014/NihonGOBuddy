@@ -11,7 +11,7 @@
     "appId": "com.example.offlineapp",
     "productName": "nihongobuddy",
     "files": [
-      "frontend/build/**/*",
+      "frontend/dist/**/*",
       "backend/**/*",
       "main.js"
     ],
