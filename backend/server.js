@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import { getDataRealtedToWord } from "./admin/utils.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 });
 // console.log(path.join(__dirname, '../frontend/dist/index.html'))
 const PORT = 3001;
+getDataRealtedToWord(0,100)
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });

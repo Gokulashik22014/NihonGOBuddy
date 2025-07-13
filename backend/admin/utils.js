@@ -1,9 +1,9 @@
 import fs from "fs";
 import { parseStringPromise } from "xml2js";
-import { db, entry } from "../sharedValues.js";
+import { db } from "../sharedValues.js";
 
 //get the words list from the JMdict-> id(auto), word, meaning, kanji, adj or verb
-const getDataRealtedToWord = async (start, limit) => {
+export const getDataRealtedToWord = async (start, limit) => {
   let xml = fs.readFileSync("./source/JMdict_e", "utf8"); // No extension, no problem!
 
   // Step 2: Parse it
@@ -31,11 +31,13 @@ const getDataRealtedToWord = async (start, limit) => {
   });
 };
 
-const insertData = (entry) => {
-  db.insert(entry, (err, newDoc) => {
-    if (err) return console.error("❌ Insert failed:", err);
-    console.log("✅ Inserted:", newDoc);
-  });
+const insertData = (entries) => {
+  for(var entry in entries){
+    db.insert(entry, (err, newDoc) => {
+      if (err) return console.error("❌ Insert failed:", err);
+      console.log("✅ Inserted:", newDoc);
+    });
+  }
 };
 
 const findAll = () => {
@@ -47,4 +49,3 @@ const findAll = () => {
     console.log("📦 All Entries:", docs);
   });
 };
-getDataRealtedToWord(0,100)

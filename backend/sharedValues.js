@@ -12,1560 +12,3727 @@ export const db = new Datastore({
 });
 
 // Sample data
-export const entry =
+export const entry =[
 [
   {
-    "word": "ヽ",
-    "kanji": [],
-    "meaning": ["iteration mark (repeats the preceding kana)"],
-    "part_of_speech": "symbol",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "日本語の表記に使われる記号です。", "en": "It's a symbol used in Japanese notation." }
-    ]
-  },
-  {
-    "word": "ヾ",
-    "kanji": [],
-    "meaning": ["iteration mark (repeats the preceding kana, but voiced)"],
-    "part_of_speech": "symbol",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "濁点付きの繰り返しに用いられます。", "en": "It's used for repetitions with a dakuten." }
-    ]
-  },
-  {
-    "word": "ゝ",
-    "kanji": [],
-    "meaning": ["iteration mark (repeats the preceding kana)"],
-    "part_of_speech": "symbol",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "主に縦書きで使われる繰り返し記号です。", "en": "It's an iteration mark mainly used in vertical writing." }
-    ]
-  },
-  {
-    "word": "ゞ",
-    "kanji": [],
-    "meaning": ["iteration mark (repeats the preceding kana, but voiced)"],
-    "part_of_speech": "symbol",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "濁音を伴う繰り返しに用いられます。", "en": "It's used for repetitions accompanied by a voiced sound." }
-    ]
-  },
-  {
-    "word": "同じ",
-    "kanji": ["同じ"],
-    "meaning": ["same", "identical", "equal", "together", "with"],
-    "part_of_speech": "adj-na, n, adv",
-    "all_8_forms": {
+    "word": "おなじ",
+    "meaning": "same, identical, equal",
+    "kanji": "同じ",
+    "part_of_speech": "adjective (na-adjective) / noun",
+    "conjugations": {
       "plain": "おなじ",
-      "plain_past": "おなじだった",
-      "plain_negative": "おなじではない",
-      "plain_negative_past": "おなじではなかった",
+      "past": "おなじだった",
+      "negative": "おなじではない",
+      "past_negative": "おなじではなかった",
       "polite": "おなじです",
       "polite_past": "おなじでした",
       "polite_negative": "おなじではありません",
       "polite_negative_past": "おなじではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "私達は同じ意見です。", "en": "We have the same opinion." },
-      { "jp": "同じくらい重要です。", "en": "It's equally important." }
+    "examples": [
+      {
+        "japanese": "これら二つの本はおなじです。",
+        "english": "These two books are the same."
+      },
+      {
+        "japanese": "私たちはいつもおなじ時間に起きます。",
+        "english": "We always wake up at the same time."
+      },
+      {
+        "japanese": "おなじ意見を持つ人はいますか？",
+        "english": "Does anyone have the same opinion?"
+      },
+      {
+        "japanese": "このおもちゃは以前に見たおもちゃとおなじだった。",
+        "english": "This toy was the same as the one I saw before."
+      },
+      {
+        "japanese": "彼は彼女とおなじくらい背が高い。",
+        "english": "He is as tall as her."
+      }
     ]
   },
   {
-    "word": "同",
-    "kanji": ["同"],
-    "meaning": ["same", "the said", "the aforementioned", "ditto"],
-    "part_of_speech": "n, pref",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "同意します。", "en": "I agree with the same." },
-      { "jp": "同封の書類をご確認ください。", "en": "Please check the enclosed documents." }
+    "word": "おなじく",
+    "meaning": "similarly, likewise, same as",
+    "kanji": "同じく",
+    "part_of_speech": "adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "私もおなじくそう思います。",
+        "english": "I think so too, similarly."
+      },
+      {
+        "japanese": "彼の意見は、おなじく私の意見と一致している。",
+        "english": "His opinion, likewise, matches mine."
+      },
+      {
+        "japanese": "参加者はおなじく皆、成功を願っていた。",
+        "english": "The participants, similarly, all wished for success."
+      },
+      {
+        "japanese": "おなじく、この問題は解決されなければならない。",
+        "english": "Likewise, this problem must be solved."
+      },
+      {
+        "japanese": "料理もおなじく美味しかった。",
+        "english": "The food was similarly delicious."
+      }
     ]
   },
   {
-    "word": "仝",
-    "kanji": ["仝"],
-    "meaning": ["iteration mark for kanji (used in vertical writing)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "この記号は漢字の繰り返しを示します。", "en": "This symbol indicates the repetition of a kanji character." }
+    "word": "どう",
+    "meaning": "how, what way",
+    "kanji": "どう",
+    "part_of_speech": "interrogative adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "どうしましたか？",
+        "english": "What happened? / What's wrong?"
+      },
+      {
+        "japanese": "どう思いますか？",
+        "english": "What do you think?"
+      },
+      {
+        "japanese": "この服は私にどう似合いますか？",
+        "english": "How does this outfit suit me?"
+      },
+      {
+        "japanese": "どうやってここまで来たの？",
+        "english": "How did you get here?"
+      },
+      {
+        "japanese": "明日はどうする？",
+        "english": "What will we do tomorrow?"
+      }
     ]
   },
   {
-    "word": "丸",
-    "kanji": ["丸"],
-    "meaning": [
-      "circle",
-      "round",
-      "full (month)",
-      "entire",
-      "whole",
-      "perfect",
-      "complete",
-      "completion",
-      "success",
-      "suffix for ship names",
-      "suffix for swords",
-      "suffix for pigs or other animals (as a term of endearment or contempt)"
-    ],
-    "part_of_speech": "n, adj-na, n-suf",
-    "all_8_forms": {
+    "word": "のま",
+    "meaning": "No specific common meaning as a standalone word. Could be a surname, part of a place name, or a shortened form depending on context.",
+    "kanji": "野間",
+    "part_of_speech": "proper noun / specific noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "野間さんは昨日大阪に行きました。",
+        "english": "Mr. Noma went to Osaka yesterday."
+      },
+      {
+        "japanese": "これは野間さんの作品です。",
+        "english": "This is Mr. Noma's work."
+      },
+      {
+        "japanese": "野間という地名があります。",
+        "english": "There's a place name called Noma."
+      },
+      {
+        "japanese": "彼は野間出身だ。",
+        "english": "He's from Noma."
+      },
+      {
+        "japanese": "野間岳に登ったことがありますか？",
+        "english": "Have you ever climbed Mt. Noma?"
+      }
+    ]
+  },
+  {
+    "word": "まる",
+    "meaning": "circle, whole, complete",
+    "kanji": "丸",
+    "part_of_speech": "noun / suffix",
+    "conjugations": {
       "plain": "まる",
-      "plain_past": "まるだった",
-      "plain_negative": "まるではない",
-      "plain_negative_past": "まるではなかった",
+      "past": "まるだった",
+      "negative": "まるではない",
+      "past_negative": "まるではなかった",
       "polite": "まるです",
       "polite_past": "まるでした",
       "polite_negative": "まるではありません",
       "polite_negative_past": "まるではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "円を丸で囲んだ。", "en": "I drew a circle around the yen sign." },
-      { "jp": "これで丸く収まった。", "en": "Now everything has been settled amicably." }
+    "examples": [
+      {
+        "japanese": "紙に丸を描いた。",
+        "english": "I drew a circle on the paper."
+      },
+      {
+        "japanese": "彼は問題を丸ごと解決した。",
+        "english": "He solved the entire problem."
+      },
+      {
+        "japanese": "このケーキは丸い形をしている。",
+        "english": "This cake has a round shape."
+      },
+      {
+        "japanese": "丸いテーブルを囲んで座った。",
+        "english": "We sat around a round table."
+      },
+      {
+        "japanese": "彼はその本を丸一日かけて読んだ。",
+        "english": "He spent a whole day reading that book."
+      }
     ]
   },
   {
-    "word": "ABC順",
-    "kanji": ["ABC順"],
-    "meaning": ["alphabetical order", "ABC order"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "リストをABC順に並べ替えてください。", "en": "Please sort the list in alphabetical order." }
+    "word": "あうんのこきゅう",
+    "meaning": "perfect synchronicity, perfect teamwork, telepathic understanding",
+    "kanji": "阿吽の呼吸",
+    "part_of_speech": "noun / idiom",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "二人のダンサーは阿吽の呼吸で踊った。",
+        "english": "The two dancers danced with perfect synchronicity."
+      },
+      {
+        "japanese": "チームは阿吽の呼吸で作業を進めた。",
+        "english": "The team proceeded with the work with perfect teamwork."
+      },
+      {
+        "japanese": "彼らは長年の付き合いで阿吽の呼吸だ。",
+        "english": "They have a telepathic understanding from years of association."
+      },
+      {
+        "japanese": "夫婦は阿吽の呼吸で家事を分担している。",
+        "english": "The couple divides housework with perfect understanding."
+      },
+      {
+        "japanese": "阿吽の呼吸で成功を収めた。",
+        "english": "They achieved success through perfect coordination."
+      }
     ]
   },
   {
-    "word": "CDプレーヤー",
-    "kanji": [],
-    "meaning": ["CD player"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "新しいCDプレーヤーを買いました。", "en": "I bought a new CD player." }
+    "word": "あおば",
+    "meaning": "fresh leaves, green leaves (especially in spring/summer)",
+    "kanji": "青葉",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "春には山に青葉が芽吹く。",
+        "english": "In spring, fresh green leaves bud on the mountains."
+      },
+      {
+        "japanese": "青葉が目にまぶしい季節になった。",
+        "english": "It has become the season when fresh green leaves are dazzling to the eyes."
+      },
+      {
+        "japanese": "青葉の美しい公園を散歩した。",
+        "english": "I walked in a park with beautiful fresh leaves."
+      },
+      {
+        "japanese": "青葉の香りを楽しんだ。",
+        "english": "I enjoyed the scent of green leaves."
+      },
+      {
+        "japanese": "青葉が風にそよぐ。",
+        "english": "The green leaves sway in the wind."
+      }
     ]
   },
   {
-    "word": "N響",
-    "kanji": ["N響"],
-    "meaning": ["NHK Symphony Orchestra"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "N響のコンサートを聴きに行った。", "en": "I went to listen to an NHK Symphony Orchestra concert." }
-    ]
-  },
-  {
-    "word": "Oバック",
-    "kanji": [],
-    "meaning": ["O-back (style of swimwear or underwear)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "彼女はOバックの水着を着ていた。", "en": "She was wearing an O-back swimsuit." }
-    ]
-  },
-  {
-    "word": "Tシャツ",
-    "kanji": [],
-    "meaning": ["T-shirt"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "お気に入りのTシャツを着た。", "en": "I wore my favorite T-shirt." }
-    ]
-  },
-  {
-    "word": "Tバック",
-    "kanji": [],
-    "meaning": ["T-back (style of underwear)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "Tバックのショーツはセクシーだ。", "en": "T-back shorts are sexy." }
-    ]
-  },
-  {
-    "word": "阿吽の呼吸",
-    "kanji": ["阿吽の呼吸"],
-    "meaning": ["perfect teamwork", "synchronization", "implicit understanding", "telepathy"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "彼らは阿吽の呼吸で仕事を進めた。", "en": "They proceeded with the work in perfect synchronization." }
-    ]
-  },
-  {
-    "word": "青葉",
-    "kanji": ["青葉"],
-    "meaning": ["fresh leaves", "green leaves"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "青葉が目にまぶしい季節になった。", "en": "It's become the season when fresh green leaves are dazzling to the eyes." }
-    ]
-  },
-  {
-    "word": "明白",
-    "kanji": ["明白"],
-    "meaning": ["clear", "obvious", "plain", "evident"],
-    "part_of_speech": "adj-na, n",
-    "all_8_forms": {
+    "word": "めいはく",
+    "meaning": "clear, obvious, explicit, distinct",
+    "kanji": "明白",
+    "part_of_speech": "adjective (na-adjective) / noun",
+    "conjugations": {
       "plain": "めいはく",
-      "plain_past": "めいはくだった",
-      "plain_negative": "めいはくではない",
-      "plain_negative_past": "めいはくではなかった",
+      "past": "めいはくだった",
+      "negative": "めいはくではない",
+      "past_negative": "めいはくではなかった",
       "polite": "めいはくです",
       "polite_past": "めいはくでした",
       "polite_negative": "めいはくではありません",
       "polite_negative_past": "めいはくではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼の意図は明白だった。", "en": "His intention was clear." },
-      { "jp": "その事実は明白だ。", "en": "That fact is evident." }
+    "examples": [
+      {
+        "japanese": "彼の意図は明白だ。",
+        "english": "His intention is clear."
+      },
+      {
+        "japanese": "それは明白な事実である。",
+        "english": "That is an obvious fact."
+      },
+      {
+        "japanese": "この証拠は彼の無罪を明白に示している。",
+        "english": "This evidence clearly shows his innocence."
+      },
+      {
+        "japanese": "問題は明白だった。",
+        "english": "The problem was explicit."
+      },
+      {
+        "japanese": "彼女の顔には明白な喜びがあった。",
+        "english": "There was clear joy on her face."
+      }
     ]
   },
   {
-    "word": "露骨",
-    "kanji": ["露骨"],
-    "meaning": [
-      "frank",
-      "open",
-      "candid",
-      "blunt",
-      "plain",
-      "explicit",
-      "undisguised",
-      "unconcealed",
-      "stark naked",
-      "bare",
-      "exposed"
-    ],
-    "part_of_speech": "adj-na, n",
-    "all_8_forms": {
+    "word": "あからさま",
+    "meaning": "plain, frank, open, blatant",
+    "kanji": "あからさま",
+    "part_of_speech": "adjective (na-adjective) / adverb",
+    "conjugations": {
       "plain": "あからさま",
-      "plain_past": "あからさまだった",
-      "plain_negative": "あからさまではない",
-      "plain_negative_past": "あからさまではなかった",
+      "past": "あからさまだった",
+      "negative": "あからさまではない",
+      "past_negative": "あからさまではなかった",
       "polite": "あからさまです",
       "polite_past": "あからさまでした",
       "polite_negative": "あからさまではありません",
       "polite_negative_past": "あからさまではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼の態度はあからさまに敵意を示していた。", "en": "His attitude openly showed hostility." },
-      { "jp": "あからさまな嘘をついた。", "en": "He told a blatant lie." }
+    "examples": [
+      {
+        "japanese": "彼はあからさまに不満を示した。",
+        "english": "He frankly showed his dissatisfaction."
+      },
+      {
+        "japanese": "彼女の言葉はあからさまだった。",
+        "english": "Her words were plain."
+      },
+      {
+        "japanese": "それはあからさまな嘘だった。",
+        "english": "That was a blatant lie."
+      },
+      {
+        "japanese": "彼の態度にあからさまな敵意が見えた。",
+        "english": "Blatant hostility was visible in his attitude."
+      },
+      {
+        "japanese": "あからさまに助けを求めた。",
+        "english": "He openly asked for help."
+      }
     ]
   },
   {
     "word": "あかん",
-    "kanji": [],
-    "meaning": ["useless", "no good", "hopeless", "can't", "must not", "forbidden"],
-    "part_of_speech": "exp, int, adj-f",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "それはあかん、触ったらあかん。", "en": "That's no good, you must not touch it." },
-      { "jp": "もう、あかんわ。", "en": "Oh no, it's hopeless." }
+    "meaning": "no good, useless, hopeless, cannot (Kansai dialect)",
+    "kanji": "あかん",
+    "part_of_speech": "expression / adjective (keiyoushi-like)",
+    "conjugations": {
+      "plain": "あかん",
+      "past": "あかんかった",
+      "negative": "あかん",
+      "past_negative": "あかんかった",
+      "polite": "あかんです",
+      "polite_past": "あかんでした",
+      "polite_negative": "あかんです",
+      "polite_negative_past": "あかんでした"
+    },
+    "examples": [
+      {
+        "japanese": "それはあかん。",
+        "english": "That's no good."
+      },
+      {
+        "japanese": "もうあかん、諦めるわ。",
+        "english": "It's hopeless, I'm giving up."
+      },
+      {
+        "japanese": "こんなことしたらあかん。",
+        "english": "You shouldn't do something like this."
+      },
+      {
+        "japanese": "このパソコン、もうあかんわ。",
+        "english": "This computer is no good anymore."
+      },
+      {
+        "japanese": "テストで０点取って、もうあかんと思った。",
+        "english": "I got 0 points on the test and thought it was hopeless."
+      }
     ]
   },
   {
-    "word": "悪どい",
-    "kanji": ["悪どい"],
-    "meaning": [
-      "gaudy",
-      "showy",
-      "flamboyant",
-      "garish",
-      "flashy",
-      "dirty",
-      "underhanded",
-      "crafty",
-      "vicious",
-      "unscrupulous",
-      "greedy",
-      "unjust"
-    ],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "word": "あかーん",
+    "meaning": "no good! (emphatic, Kansai dialect)",
+    "kanji": "あかーん",
+    "part_of_speech": "exclamation / emphatic form of あかん",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あかーん！間に合わへん！",
+        "english": "No good! We won't make it in time!"
+      },
+      {
+        "japanese": "そんなことしたらあかーんで！",
+        "english": "You really shouldn't do something like that!"
+      },
+      {
+        "japanese": "あかーん、財布忘れてきた！",
+        "english": "Oh no, I forgot my wallet!"
+      },
+      {
+        "japanese": "テストの結果があかーんかった。",
+        "english": "The test results were terrible."
+      },
+      {
+        "japanese": "この料理、ちょっと味が薄くてあかーんな。",
+        "english": "This dish is a bit bland, it's not good."
+      }
+    ]
+  },
+  {
+    "word": "あくどい",
+    "meaning": "악랄하다 (wicked, 악질적이다 (malicious), 잔인하다 (cruel)",
+    "kanji": "あくどい",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "あくどい",
-      "plain_past": "あくどかった",
-      "plain_negative": "あくどくない",
-      "plain_negative_past": "あくどくなかった",
+      "past": "あくどかった",
+      "negative": "あくどくない",
+      "past_negative": "あくどくなかった",
       "polite": "あくどいです",
       "polite_past": "あくどかったです",
       "polite_negative": "あくどくありません",
       "polite_negative_past": "あくどくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "あの手口は悪どい。", "en": "That trick is underhanded." },
-      { "jp": "悪どい商売をしている。", "en": "He's running a shady business." }
+    "examples": [
+      {
+        "japanese": "彼はあくどい手口で人を騙した。",
+        "english": "He deceived people with wicked tricks."
+      },
+      {
+        "japanese": "その商売はあくどい。",
+        "english": "That business is malicious."
+      },
+      {
+        "japanese": "あくどい詐欺に引っかかった。",
+        "english": "I fell for a cruel scam."
+      },
+      {
+        "japanese": "あくどい計画を立てている。",
+        "english": "They are making a wicked plan."
+      },
+      {
+        "japanese": "彼のやり方はいつもあくどい。",
+        "english": "His methods are always malicious."
+      }
     ]
   },
   {
-    "word": "揚羽蝶",
-    "kanji": ["揚羽蝶"],
-    "meaning": ["to discuss exhaustively", "to talk about (faults, etc.)", "to find fault with", "to criticize"],
-    "part_of_speech": "v5u",
-    "all_8_forms": {
+    "word": "あげつらう",
+    "meaning": "to discuss critically, to pick flaws, to denounce",
+    "kanji": "論う",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "あげつらう",
-      "plain_past": "あげつらった",
-      "plain_negative": "あげつらわない",
-      "plain_negative_past": "あげつらわなかった",
+      "past": "あげつらった",
+      "negative": "あげつらわない",
+      "past_negative": "あげつらわなかった",
       "polite": "あげつらいます",
       "polite_past": "あげつらいました",
       "polite_negative": "あげつらいません",
       "polite_negative_past": "あげつらいませんでした"
     },
-    "example_sentences": [
-      { "jp": "人の欠点をあげつらうのはよくない。", "en": "It's not good to find fault with other people's shortcomings." }
+    "examples": [
+      {
+        "japanese": "人の欠点をあげつらうのは良くない。",
+        "english": "It's not good to pick flaws in others."
+      },
+      {
+        "japanese": "彼は彼女の失敗をあげつらった。",
+        "english": "He discussed her failures critically."
+      },
+      {
+        "japanese": "あら探しをせず、あげつらうのをやめなさい。",
+        "english": "Stop finding fault and denouncing."
+      },
+      {
+        "japanese": "彼の過去の過ちをあげつらっても意味がない。",
+        "english": "There's no point in denouncing his past mistakes."
+      },
+      {
+        "japanese": "会議では問題点だけをあげつらうのではなく、解決策も考えよう。",
+        "english": "In the meeting, let's not just pick flaws in the problems, but also think about solutions."
+      }
     ]
   },
   {
     "word": "あしらう",
-    "kanji": ["あしらう"],
-    "meaning": [
-      "to handle",
-      "to deal with",
-      "to treat",
-      "to respond to",
-      "to parry",
-      "to fend off",
-      "to add a touch of",
-      "to garnish",
-      "to trim (e.g. a bonsai tree)"
-    ],
-    "part_of_speech": "v5u",
-    "all_8_forms": {
+    "meaning": "to treat, to handle, to deal with (often dismissively or playfully)",
+    "kanji": "あしらう",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "あしらう",
-      "plain_past": "あしらった",
-      "plain_negative": "あしらわない",
-      "plain_negative_past": "あしらわなかった",
+      "past": "あしらった",
+      "negative": "あしらわない",
+      "past_negative": "あしらわなかった",
       "polite": "あしらいます",
       "polite_past": "あしらいました",
       "polite_negative": "あしらいません",
       "polite_negative_past": "あしらいませんでした"
     },
-    "example_sentences": [
-      { "jp": "客をうまくあしらった。", "en": "He handled the customer well." },
-      { "jp": "白い花をあしらったデザイン。", "en": "A design with a touch of white flowers." }
+    "examples": [
+      {
+        "japanese": "彼女は彼を冷たくあしらった。",
+        "english": "She treated him coldly."
+      },
+      {
+        "japanese": "彼は冗談であしらわれた。",
+        "english": "He was handled with a joke."
+      },
+      {
+        "japanese": "客を丁重にあしらう。",
+        "english": "To treat customers courteously."
+      },
+      {
+        "japanese": "部下をうまくあしらう。",
+        "english": "To deal with subordinates skillfully."
+      },
+      {
+        "japanese": "彼の悪ふざけは軽くあしらった。",
+        "english": "I lightly dismissed his mischief."
+      }
     ]
   },
   {
-    "word": "馬酔木",
-    "kanji": ["馬酔木"],
-    "meaning": ["Japanese andromeda (Pieris japonica)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "馬酔木の花が咲いている。", "en": "The Japanese andromeda flowers are blooming." }
+    "word": "あせび",
+    "meaning": "Japanese Andromeda (Pieris japonica), a poisonous evergreen shrub",
+    "kanji": "馬酔木",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "庭にあせびが咲いている。",
+        "english": "Japanese Andromeda is blooming in the garden."
+      },
+      {
+        "japanese": "あせびの花は美しいが毒がある。",
+        "english": "The Japanese Andromeda flower is beautiful but poisonous."
+      },
+      {
+        "japanese": "山道であせびの木を見つけた。",
+        "english": "I found a Japanese Andromeda tree on the mountain path."
+      },
+      {
+        "japanese": "あせびはツツジ科の植物だ。",
+        "english": "Japanese Andromeda is a plant of the Rhododendron family."
+      },
+      {
+        "japanese": "春になるとあせびが白い花をつける。",
+        "english": "In spring, Japanese Andromeda bears white flowers."
+      }
+    ]
+  },
+  {
+    "word": "あしび",
+    "meaning": "Japanese Andromeda (Pieris japonica), a poisonous evergreen shrub (alternative reading of あせび)",
+    "kanji": "馬酔木",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あしびの白い花が春の訪れを告げる。",
+        "english": "The white flowers of Japanese Andromeda announce the arrival of spring."
+      },
+      {
+        "japanese": "毒があるあしびには注意が必要だ。",
+        "english": "Caution is necessary with the poisonous Japanese Andromeda."
+      },
+      {
+        "japanese": "庭園にあしびが植えられている。",
+        "english": "Japanese Andromeda is planted in the garden."
+      },
+      {
+        "japanese": "あしびの葉は馬を酔わせるという。",
+        "english": "It is said that Japanese Andromeda leaves intoxicate horses."
+      },
+      {
+        "japanese": "昔からあしびは美しい花として知られている。",
+        "english": "Japanese Andromeda has been known as a beautiful flower since ancient times."
+      }
+    ]
+  },
+  {
+    "word": "あせぼ",
+    "meaning": "heat rash, prickly heat",
+    "kanji": "汗疹",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "夏になると子供にあせぼができやすい。",
+        "english": "Children tend to get heat rash in summer."
+      },
+      {
+        "japanese": "あせぼがかゆくてたまらない。",
+        "english": "The heat rash is unbearably itchy."
+      },
+      {
+        "japanese": "汗疹の薬を塗った。",
+        "english": "I applied medicine for heat rash."
+      },
+      {
+        "japanese": "汗疹を防ぐには、肌を清潔に保つことが大切です。",
+        "english": "To prevent heat rash, it's important to keep your skin clean."
+      },
+      {
+        "japanese": "赤ちゃんにあせぼができた。",
+        "english": "The baby got heat rash."
+      }
+    ]
+  },
+  {
+    "word": "あせぶ",
+    "meaning": "sweat (Kansai dialect, colloquial), or a rare variant of あせぼ",
+    "kanji": "汗ぶ",
+    "part_of_speech": "noun / verb (colloquial)",
+    "conjugations": {
+      "plain": "あせぶ",
+      "past": "あせんだ",
+      "negative": "あせばん",
+      "past_negative": "あせばへんかった",
+      "polite": "あせびます",
+      "polite_past": "あせびました",
+      "polite_negative": "あせびません",
+      "polite_negative_past": "あせびませんでした"
+    },
+    "examples": [
+      {
+        "japanese": "暑くてあせぶが止まらない。",
+        "english": "It's so hot, I can't stop sweating."
+      },
+      {
+        "japanese": "運動したらあせぶがびっしょりになった。",
+        "english": "After exercising, I was drenched in sweat."
+      },
+      {
+        "japanese": "この服はあせぶをよく吸ってくれる。",
+        "english": "These clothes absorb sweat well."
+      },
+      {
+        "japanese": "夏はあせぶをかきやすい。",
+        "english": "It's easy to sweat in summer."
+      },
+      {
+        "japanese": "あせぶで体がべたつく。",
+        "english": "My body is sticky with sweat."
+      }
     ]
   },
   {
     "word": "あそこ",
-    "kanji": [],
-    "meaning": [
-      "over there",
-      "that place (far from both speaker and listener)",
-      "that (point in time, space, or discourse)",
-      "that person (distant from speaker and listener)",
-      "there (implied or omitted word)",
-      "genitals (euphemism)"
-    ],
-    "part_of_speech": "n, pn",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あそこに座ってください。", "en": "Please sit over there." },
-      { "jp": "話はあそこまで進んだ。", "en": "The discussion progressed to that point." }
+    "meaning": "over there, that place, that far-off place (also euphemism for private parts)",
+    "kanji": "あそこ",
+    "part_of_speech": "pronoun / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あそこに座ってください。",
+        "english": "Please sit over there."
+      },
+      {
+        "japanese": "あそこまで行くのは遠い。",
+        "english": "It's far to go all the way over there."
+      },
+      {
+        "japanese": "あそこはいつも混んでいる。",
+        "english": "That place is always crowded."
+      },
+      {
+        "japanese": "あそこに何か落ちているよ。",
+        "english": "Something is dropped over there."
+      },
+      {
+        "japanese": "子供があそこに隠れた。",
+        "english": "The child hid over there."
+      }
+    ]
+  },
+  {
+    "word": "あすこ",
+    "meaning": "over there, that place (slightly older or more formal variant of あそこ)",
+    "kanji": "あすこ",
+    "part_of_speech": "pronoun / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あすこの店は美味しいと評判だ。",
+        "english": "That shop over there has a reputation for being delicious."
+      },
+      {
+        "japanese": "あすこに大きな木がある。",
+        "english": "There's a big tree over there."
+      },
+      {
+        "japanese": "あすこから来たんですか？",
+        "english": "Did you come from over there?"
+      },
+      {
+        "japanese": "あすこは景色が良い。",
+        "english": "The view over there is good."
+      },
+      {
+        "japanese": "あすこに荷物を置いた。",
+        "english": "I put the luggage over there."
+      }
+    ]
+  },
+  {
+    "word": "かしこ",
+    "meaning": "respectfully, sincerely (used as a closing in letters, especially by women); that place (archaic)",
+    "kanji": "かしこ",
+    "part_of_speech": "adverb / noun (archaic)",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "手紙の最後に「かしこ」と書いた。",
+        "english": "I wrote 'kashiko' at the end of the letter."
+      },
+      {
+        "japanese": "かしこみかしこみ、謹んで申し上げます。",
+        "english": "Respectfully and humbly, I state."
+      },
+      {
+        "japanese": "昔の文には「かしこ」がよく使われた。",
+        "english": "In old writings, 'kashiko' was often used."
+      },
+      {
+        "japanese": "かしこは静かな場所だった。",
+        "english": "That place was quiet. (archaic)"
+      },
+      {
+        "japanese": "心より、かしこ。",
+        "english": "From the bottom of my heart, respectfully."
+      }
+    ]
+  },
+  {
+    "word": "あしこ",
+    "meaning": "over there, that place (older, more poetic variant of あそこ)",
+    "kanji": "あしこ",
+    "part_of_speech": "pronoun / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あしこに見える山は富士山だ。",
+        "english": "The mountain visible over there is Mt. Fuji."
+      },
+      {
+        "japanese": "あしこの桜はもう満開だ。",
+        "english": "The cherry blossoms over there are already in full bloom."
+      },
+      {
+        "japanese": "旅の途中で、あしこに立ち寄った。",
+        "english": "On my journey, I stopped by that place over there."
+      },
+      {
+        "japanese": "あしこの景色は絵のように美しかった。",
+        "english": "The scenery over there was as beautiful as a painting."
+      },
+      {
+        "japanese": "あしこから聞こえる鳥のさえずり。",
+        "english": "The chirping of birds heard from over there."
+      }
+    ]
+  },
+  {
+    "word": "あこ",
+    "meaning": "that place (very informal, dialectal, or archaic short form of あそこ/あしこ)",
+    "kanji": "あこ",
+    "part_of_speech": "pronoun / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あこに置いてあるよ。",
+        "english": "It's placed over there."
+      },
+      {
+        "japanese": "あこに行くのはやめよう。",
+        "english": "Let's not go over there."
+      },
+      {
+        "japanese": "あこは私の故郷だ。",
+        "english": "That place is my hometown."
+      },
+      {
+        "japanese": "あこで待っているから。",
+        "english": "I'll be waiting over there."
+      },
+      {
+        "japanese": "あこから手紙が来た。",
+        "english": "A letter came from over there."
+      }
     ]
   },
   {
     "word": "あっさり",
-    "kanji": [],
-    "meaning": [
-      "easily",
-      "readily",
-      "plainly",
-      "lightly (seasoned)",
-      "simply",
-      "light (colour, design)",
-      "quickly",
-      "without fuss",
-      "frankly",
-      "lightly",
-      "neatly"
-    ],
-    "part_of_speech": "adv, adv-to, adj-t",
-    "all_8_forms": {
+    "meaning": "easily, lightly, simply, plainly (often used for taste or character)",
+    "kanji": "あっさり",
+    "part_of_speech": "adverb / adjective (suru-verb form)",
+    "conjugations": {
       "plain": "あっさり",
-      "plain_past": "あっさりした",
-      "plain_negative": "あっさりしない",
-      "plain_negative_past": "あっさりしなかった",
+      "past": "あっさりした",
+      "negative": "あっさりしない",
+      "past_negative": "あっさりしなかった",
       "polite": "あっさりします",
       "polite_past": "あっさりしました",
       "polite_negative": "あっさりしません",
       "polite_negative_past": "あっさりしませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼はあっさり認めた。", "en": "He readily admitted it." },
-      { "jp": "あっさりした味付けの料理。", "en": "Lightly seasoned cuisine." }
+    "examples": [
+      {
+        "japanese": "彼は問題をあっさり解決した。",
+        "english": "He easily solved the problem."
+      },
+      {
+        "japanese": "このスープはあっさりしている。",
+        "english": "This soup is light-tasting."
+      },
+      {
+        "japanese": "彼女はあっさりした性格だ。",
+        "english": "She has a simple (unfussy) personality."
+      },
+      {
+        "japanese": "あっさりした和食を食べたい。",
+        "english": "I want to eat light Japanese food."
+      },
+      {
+        "japanese": "彼は誘いをあっさり断った。",
+        "english": "He flatly refused the invitation."
+      }
     ]
   },
   {
-    "word": "あっという間に",
-    "kanji": ["あっという間に"],
-    "meaning": ["in the blink of an eye", "in an instant", "in a flash"],
-    "part_of_speech": "adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あっという間に時間が過ぎた。", "en": "Time passed in the blink of an eye." }
+    "word": "あっというまに",
+    "meaning": "in the blink of an eye, in an instant, in a flash",
+    "kanji": "あっという間に",
+    "part_of_speech": "adverbial phrase",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "宿題はあっというまに終わった。",
+        "english": "The homework was finished in the blink of an eye."
+      },
+      {
+        "japanese": "時間はあっというまに過ぎた。",
+        "english": "Time passed in an instant."
+      },
+      {
+        "japanese": "彼はあっというまに姿を消した。",
+        "english": "He disappeared in a flash."
+      },
+      {
+        "japanese": "一年があっというまに過ぎた。",
+        "english": "A year passed in the blink of an eye."
+      },
+      {
+        "japanese": "あっというまに夕焼けになった。",
+        "english": "In an instant, it became sunset."
+      }
     ]
   },
   {
     "word": "あっぷあっぷ",
-    "kanji": [],
-    "meaning": [
-      "struggling to keep one's head above water",
-      "struggling to breathe",
-      "overwhelmed (with work, etc.)"
-    ],
-    "part_of_speech": "adv, adv-to",
-    "all_8_forms": {
+    "meaning": "gasping for air (from drowning), struggling to keep one's head above water (figurative)",
+    "kanji": "あっぷあっぷ",
+    "part_of_speech": "onomatopoeia / adverbial phrase",
+    "conjugations": {
       "plain": "あっぷあっぷ",
-      "plain_past": "あっぷあっぷした",
-      "plain_negative": "あっぷあっぷしない",
-      "plain_negative_past": "あっぷあっぷしなかった",
+      "past": "あっぷあっぷした",
+      "negative": "あっぷあっぷしない",
+      "past_negative": "あっぷあっぷしなかった",
       "polite": "あっぷあっぷします",
       "polite_past": "あっぷあっぷしました",
       "polite_negative": "あっぷあっぷしません",
       "polite_negative_past": "あっぷあっぷしませんでした"
     },
-    "example_sentences": [
-      { "jp": "仕事に追われてあっぷあっぷだ。", "en": "I'm overwhelmed with work." },
-      { "jp": "水に溺れてあっぷあっぷしている。", "en": "He's struggling to keep his head above water." }
+    "examples": [
+      {
+        "japanese": "子供はプールであっぷあっぷしていた。",
+        "english": "The child was gasping for air in the pool."
+      },
+      {
+        "japanese": "仕事が多すぎて、あっぷあっぷの状態だ。",
+        "english": "I have too much work, I'm struggling to keep my head above water."
+      },
+      {
+        "japanese": "借金であっぷあっぷだ。",
+        "english": "I'm struggling with debt."
+      },
+      {
+        "japanese": "水中で息ができず、あっぷあっぷした。",
+        "english": "I couldn't breathe underwater and gasped for air."
+      },
+      {
+        "japanese": "彼は試験勉強であっぷあっぷだった。",
+        "english": "He was struggling with his exam studies."
+      }
     ]
   },
   {
     "word": "あどけない",
-    "kanji": [],
-    "meaning": ["innocent", "childlike", "naïve"],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "meaning": "innocent, childlike, naive",
+    "kanji": "あどけない",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "あどけない",
-      "plain_past": "あどけなかった",
-      "plain_negative": "あどけなくない",
-      "plain_negative_past": "あどけなくなかった",
+      "past": "あどけなかった",
+      "negative": "あどけなくない",
+      "past_negative": "あどけなくなかった",
       "polite": "あどけないです",
       "polite_past": "あどけなかったです",
       "polite_negative": "あどけなくありません",
       "polite_negative_past": "あどけなくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "あどけない笑顔を見せた。", "en": "She showed an innocent smile." }
+    "examples": [
+      {
+        "japanese": "彼女のあどけない笑顔に癒された。",
+        "english": "I was healed by her innocent smile."
+      },
+      {
+        "japanese": "あどけない子供のしぐさ。",
+        "english": "The innocent gestures of a child."
+      },
+      {
+        "japanese": "彼は年をとってもあどけない面がある。",
+        "english": "Even though he's old, he has a childlike side."
+      },
+      {
+        "japanese": "あどけない表情で真実を語った。",
+        "english": "He told the truth with an innocent expression."
+      },
+      {
+        "japanese": "その絵にはあどけない少女が描かれていた。",
+        "english": "An innocent girl was depicted in that painting."
+      }
     ]
   },
   {
     "word": "あの",
-    "kanji": ["あの"],
-    "meaning": ["that (distant from both speaker and listener, or distant in time)", "that (of a certain time or place)", "that (person)"],
-    "part_of_speech": "pn",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あの本を読んでいます。", "en": "I'm reading that book." },
-      { "jp": "あの時、彼は若かった。", "en": "At that time, he was young." }
+    "meaning": "that, those (far from both speaker and listener); well, um, say (interjection)",
+    "kanji": "あの",
+    "part_of_speech": "demonstrative adjective / interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あの山は高い。",
+        "english": "That mountain is tall."
+      },
+      {
+        "japanese": "あの、すみません。",
+        "english": "Um, excuse me."
+      },
+      {
+        "japanese": "あの本を貸してください。",
+        "english": "Please lend me that book."
+      },
+      {
+        "japanese": "あのね、聞いてほしいんだけど。",
+        "english": "Hey, I want you to listen."
+      },
+      {
+        "japanese": "あの人は誰ですか？",
+        "english": "Who is that person?"
+      }
     ]
   },
   {
-    "word": "あの",
-    "kanji": [],
-    "meaning": ["um", "er", "well", "excuse me (for being hesitant, for starting a conversation)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あの、すみません。", "en": "Um, excuse me." },
-      { "jp": "あのー、質問があります。", "en": "Er, I have a question." }
+    "word": "あん",
+    "meaning": "red bean paste; a short form of 'anne' (a call, informal)",
+    "kanji": "餡",
+    "part_of_speech": "noun / interjection (informal)",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あんパンのあんが美味しい。",
+        "english": "The red bean paste in the anpan is delicious."
+      },
+      {
+        "japanese": "大福にあんが入っている。",
+        "english": "Daifuku contains red bean paste."
+      },
+      {
+        "japanese": "あん、ちょっと待って！",
+        "english": "Hey, wait a minute!"
+      },
+      {
+        "japanese": "このあんこは甘すぎない。",
+        "english": "This red bean paste isn't too sweet."
+      },
+      {
+        "japanese": "あんをたっぷり入れたい。",
+        "english": "I want to put in a lot of red bean paste."
+      }
     ]
   },
   {
-    "word": "あの人",
-    "kanji": ["あの人"],
-    "meaning": ["that person", "he", "she"],
-    "part_of_speech": "pn",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あの人は誰ですか。", "en": "Who is that person?" },
-      { "jp": "あの人が先生です。", "en": "That person is the teacher." }
+    "word": "あのひと",
+    "meaning": "that person (less formal than あのかた)",
+    "kanji": "あの人",
+    "part_of_speech": "pronoun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あの人は私の先生です。",
+        "english": "That person is my teacher."
+      },
+      {
+        "japanese": "あの人はとても親切だ。",
+        "english": "That person is very kind."
+      },
+      {
+        "japanese": "あの人とどこかで会った気がする。",
+        "english": "I feel like I've met that person somewhere."
+      },
+      {
+        "japanese": "あの人はいつも笑顔だ。",
+        "english": "That person is always smiling."
+      },
+      {
+        "japanese": "あの人は何をしているの？",
+        "english": "What is that person doing?"
+      }
     ]
   },
   {
-    "word": "あの方",
-    "kanji": ["あの方"],
-    "meaning": ["that person (polite)", "he", "she"],
-    "part_of_speech": "pn",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あの方は私の上司です。", "en": "That person is my boss." },
-      { "jp": "あの方にお目にかかりたい。", "en": "I would like to meet that person." }
+    "word": "あのかた",
+    "meaning": "that person (polite form of あのひと)",
+    "kanji": "あの方",
+    "part_of_speech": "pronoun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あの方はどちら様ですか？",
+        "english": "Who is that person (polite)?"
+      },
+      {
+        "japanese": "あの方は有名な学者です。",
+        "english": "That person is a famous scholar."
+      },
+      {
+        "japanese": "あの方はいつも丁寧だ。",
+        "english": "That person is always polite."
+      },
+      {
+        "japanese": "あの方のお話はいつも興味深い。",
+        "english": "That person's stories are always interesting."
+      },
+      {
+        "japanese": "あの方に会えて光栄です。",
+        "english": "It's an honor to meet that person."
+      }
     ]
   },
   {
-    "word": "溢れる",
-    "kanji": ["溢れる"],
-    "meaning": [
-      "to be left over",
-      "to be left out",
-      "to not get a turn",
-      "to be unable to find a place (e.g. to sit)",
-      "to overflow",
-      "to brim over"
-    ],
-    "part_of_speech": "v1",
-    "all_8_forms": {
+    "word": "あぶれる",
+    "meaning": "to be left out, to miss out on, to be unable to get",
+    "kanji": "あぶれる",
+    "part_of_speech": "verb (ichidan verb)",
+    "conjugations": {
       "plain": "あぶれる",
-      "plain_past": "あぶれた",
-      "plain_negative": "あぶれない",
-      "plain_negative_past": "あぶれなかった",
+      "past": "あぶれた",
+      "negative": "あぶれない",
+      "past_negative": "あぶれなかった",
       "polite": "あぶれます",
       "polite_past": "あぶれました",
       "polite_negative": "あぶれません",
       "polite_negative_past": "あぶれませんでした"
     },
-    "example_sentences": [
-      { "jp": "席があぶれた。", "en": "I couldn't get a seat." },
-      { "jp": "仕事からあぶれた。", "en": "I was left out of the job." }
+    "examples": [
+      {
+        "japanese": "チケットがなくて、映画にあぶれた。",
+        "english": "I couldn't get a ticket and missed out on the movie."
+      },
+      {
+        "japanese": "仕事にあぶれて困っている。",
+        "english": "I'm in trouble because I couldn't get a job."
+      },
+      {
+        "japanese": "参加者があぶれないように席を増やした。",
+        "english": "We increased the seats so that no participants would be left out."
+      },
+      {
+        "japanese": "このパーティーは人数制限があるのであぶれないように注意して。",
+        "english": "This party has a limited number of people, so be careful not to be left out."
+      },
+      {
+        "japanese": "彼はそのチャンスにあぶれてしまった。",
+        "english": "He missed out on that chance."
+      }
     ]
   },
   {
     "word": "あべこべ",
-    "kanji": [],
-    "meaning": ["upside down", "inside out", "contrary", "opposite", "reverse"],
-    "part_of_speech": "adj-na, n, adv",
-    "all_8_forms": {
+    "meaning": "upside down, inside out, contrary, reversed",
+    "kanji": "あべこべ",
+    "part_of_speech": "adjective (na-adjective) / noun / adverb",
+    "conjugations": {
       "plain": "あべこべ",
-      "plain_past": "あべこべだった",
-      "plain_negative": "あべこべではない",
-      "plain_negative_past": "あべこべではなかった",
+      "past": "あべこべだった",
+      "negative": "あべこべではない",
+      "past_negative": "あべこべではなかった",
       "polite": "あべこべです",
       "polite_past": "あべこべでした",
       "polite_negative": "あべこべではありません",
       "polite_negative_past": "あべこべではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "靴をあべこべに履いている。", "en": "You're wearing your shoes on the wrong feet." },
-      { "jp": "話があべこべだ。", "en": "The story is the exact opposite of what happened." }
+    "examples": [
+      {
+        "japanese": "シャツをあべこべに着てしまった。",
+        "english": "I put my shirt on inside out."
+      },
+      {
+        "japanese": "彼の言うこととやることがあべこべだ。",
+        "english": "What he says and what he does are contrary."
+      },
+      {
+        "japanese": "地図をあべこべに持っていた。",
+        "english": "I was holding the map upside down."
+      },
+      {
+        "japanese": "私たちの意見はあべこべだ。",
+        "english": "Our opinions are reversed."
+      },
+      {
+        "japanese": "あべこべに並べてしまった。",
+        "english": "I arranged them in reverse order."
+      }
     ]
   },
   {
-    "word": "阿呆んだら",
-    "kanji": ["阿呆んだら"],
-    "meaning": ["idiot", "fool", "damn fool"],
-    "part_of_speech": "n, adj-na",
-    "all_8_forms": {
-      "plain": "あほんだら",
-      "plain_past": "あほんだらだった",
-      "plain_negative": "あほんだらではない",
-      "plain_negative_past": "あほんだらではなかった",
-      "polite": "あほんだらです",
-      "polite_past": "あほんだらでした",
-      "polite_negative": "あほんだらではありません",
-      "polite_negative_past": "あほんだらではありませんでした"
-    },
-    "example_sentences": [
-      { "jp": "このあほんだらが！", "en": "You damn fool!" }
+    "word": "あほんだら",
+    "meaning": "idiot, fool, stupid (stronger and more vulgar than あほ, Kansai dialect)",
+    "kanji": "あほんだら",
+    "part_of_speech": "noun / expletive",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "このあほんだらが！",
+        "english": "You idiot!"
+      },
+      {
+        "japanese": "あほんだらなことを言うな。",
+        "english": "Don't say idiotic things."
+      },
+      {
+        "japanese": "彼は全くのあほんだらだ。",
+        "english": "He's a complete fool."
+      },
+      {
+        "japanese": "なんでそんなあほんだらなことをしたんや？",
+        "english": "Why did you do such a stupid thing?"
+      },
+      {
+        "japanese": "あほんだら、早くやれ！",
+        "english": "You fool, hurry up and do it!"
+      }
     ]
   },
   {
-    "word": "アマゴ",
-    "kanji": [],
-    "meaning": ["amago (Oncorhynchus masou macrostomus), a salmonid fish"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "川でアマゴを釣った。", "en": "I caught an amago in the river." }
+    "word": "あほだら",
+    "meaning": "idiot, fool, stupid (variant of あほんだら, often associated with a kind of nonsense song)",
+    "kanji": "あほだら",
+    "part_of_speech": "noun / expletive",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "お前は本当にあほだらだな。",
+        "english": "You're really such an idiot."
+      },
+      {
+        "japanese": "あほだら経という歌がある。",
+        "english": "There's a song called Ahodara-kyo (Nonsense Sutra)."
+      },
+      {
+        "japanese": "あほだらな話はやめろ。",
+        "english": "Stop with the idiotic talk."
+      },
+      {
+        "japanese": "あのあほだらは何をしているんだ？",
+        "english": "What is that idiot doing?"
+      },
+      {
+        "japanese": "彼はあほだらな質問ばかりする。",
+        "english": "He only asks foolish questions."
+      }
+    ]
+  },
+  {
+    "word": "あまご",
+    "meaning": "Amago salmon, red-spotted masu trout (Oncorhynchus masou macrostomus)",
+    "kanji": "アマゴ / 尼子",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "清流でアマゴが釣れた。",
+        "english": "I caught an Amago salmon in the clear stream."
+      },
+      {
+        "japanese": "アマゴは渓流釣りの人気のある魚だ。",
+        "english": "Amago is a popular fish for stream fishing."
+      },
+      {
+        "japanese": "アマゴの塩焼きは美味しい。",
+        "english": "Salt-grilled Amago is delicious."
+      },
+      {
+        "japanese": "アマゴはきれいな水にしか生息しない。",
+        "english": "Amago only lives in clean water."
+      },
+      {
+        "japanese": "この川にはアマゴがたくさんいる。",
+        "english": "There are many Amago in this river."
+      }
     ]
   },
   {
     "word": "あやす",
-    "kanji": ["あやす"],
-    "meaning": ["to dandle", "to lull", "to play with (a baby)", "to soothe", "to amuse"],
-    "part_of_speech": "v5s",
-    "all_8_forms": {
+    "meaning": "to soothe, to pacify, to lull (a baby), to play with (a child)",
+    "kanji": "あやす",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "あやす",
-      "plain_past": "あやした",
-      "plain_negative": "あやさない",
-      "plain_negative_past": "あやさなかった",
+      "past": "あやした",
+      "negative": "あやさない",
+      "past_negative": "あやさなかった",
       "polite": "あやします",
       "polite_past": "あやしました",
       "polite_negative": "あやしません",
       "polite_negative_past": "あやしませんでした"
     },
-    "example_sentences": [
-      { "jp": "赤ちゃんをあやす。", "en": "To dandle a baby." },
-      { "jp": "子供をあやして泣きやませた。", "en": "I soothed the child and made them stop crying." }
+    "examples": [
+      {
+        "japanese": "母親が赤ちゃんをあやす。",
+        "english": "The mother soothes the baby."
+      },
+      {
+        "japanese": "泣いている子供をあやした。",
+        "english": "I pacified the crying child."
+      },
+      {
+        "japanese": "彼は猫をあやすのが上手だ。",
+        "english": "He's good at playing with cats."
+      },
+      {
+        "japanese": "歌を歌って赤ちゃんをあやした。",
+        "english": "I sang a song to lull the baby."
+      },
+      {
+        "japanese": "ペットをあやして心を落ち着かせた。",
+        "english": "I soothed my pet and calmed my mind."
+      }
     ]
   },
   {
-    "word": "曖昧",
-    "kanji": ["曖昧"],
-    "meaning": ["uncertain", "vague", "ambiguous", "hazy", "dubious", "shaky"],
-    "part_of_speech": "adj-na, n",
-    "all_8_forms": {
+    "word": "あやふや",
+    "meaning": "vague, uncertain, ambiguous, dubious",
+    "kanji": "あやふや",
+    "part_of_speech": "adjective (na-adjective) / adverb",
+    "conjugations": {
       "plain": "あやふや",
-      "plain_past": "あやふやだった",
-      "plain_negative": "あやふやではない",
-      "plain_negative_past": "あやふやではなかった",
+      "past": "あやふやだった",
+      "negative": "あやふやではない",
+      "past_negative": "あやふやではなかった",
       "polite": "あやふやです",
       "polite_past": "あやふやでした",
       "polite_negative": "あやふやではありません",
       "polite_negative_past": "あやふやではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼の証言はあやふやだ。", "en": "His testimony is dubious." },
-      { "jp": "あやふやな態度をとるな。", "en": "Don't take an ambiguous attitude." }
+    "examples": [
+      {
+        "japanese": "彼の記憶はあやふやだ。",
+        "english": "His memory is vague."
+      },
+      {
+        "japanese": "あやふやな返事しかできない。",
+        "english": "I can only give a vague answer."
+      },
+      {
+        "japanese": "彼はいつもあやふやな態度をとる。",
+        "english": "He always takes an ambiguous attitude."
+      },
+      {
+        "japanese": "あやふやな知識で話さないでください。",
+        "english": "Please don't speak with dubious knowledge."
+      },
+      {
+        "japanese": "その情報はあやふやだった。",
+        "english": "That information was uncertain."
+      }
     ]
   },
   {
     "word": "あら",
-    "kanji": [],
-    "meaning": ["oh", "ah", "my (female exclamatory particle)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あら、素敵！", "en": "Oh, how lovely!" },
-      { "jp": "あらー、大変ね。", "en": "Oh dear, that's tough." }
-    ]
-  },
-  {
-    "word": "粗",
-    "kanji": ["粗"],
-    "meaning": ["defect", "flaw", "blemish", "imperfection", "coarse", "rough", "crude"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "文章の粗を指摘する。", "en": "To point out flaws in the writing." },
-      { "jp": "アラが見つかった。", "en": "A defect was found." }
+    "meaning": "oh!, ah!, oh my! (exclamation of surprise, mild disappointment, or realization); fish bones/scraps",
+    "kanji": "あら / 粗",
+    "part_of_speech": "interjection / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あら、もうこんな時間！",
+        "english": "Oh, it's already this late!"
+      },
+      {
+        "japanese": "あら、そうだったの。",
+        "english": "Oh, so that's how it was."
+      },
+      {
+        "japanese": "魚のあらで出汁をとる。",
+        "english": "Make broth with fish bones/scraps."
+      },
+      {
+        "japanese": "あら、素敵なワンピースね。",
+        "english": "Oh, what a lovely dress!"
+      },
+      {
+        "japanese": "あら、忘れ物しちゃった。",
+        "english": "Oh dear, I forgot something."
+      }
     ]
   },
   {
     "word": "あれ",
-    "kanji": [],
-    "meaning": [
-      "that (indicating something distant from both speaker and listener, or something not visible to either)",
-      "that (referring to a previous topic or something known to both)",
-      "oh",
-      "ah",
-      "well",
-      "come on (when one cannot remember the word)"
-    ],
-    "part_of_speech": "pn, int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あれは何ですか。", "en": "What is that?" },
-      { "jp": "あれ、鍵がない。", "en": "Oh, I don't have my key." }
+    "meaning": "that (far from both speaker and listener); that thing, that matter; an exclamation of surprise",
+    "kanji": "あれ",
+    "part_of_speech": "pronoun / interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あれは何ですか？",
+        "english": "What is that?"
+      },
+      {
+        "japanese": "あれ、鍵がない！",
+        "english": "Oh, my keys are gone!"
+      },
+      {
+        "japanese": "あれを片付けてください。",
+        "english": "Please put that away."
+      },
+      {
+        "japanese": "あれからもう10年経った。",
+        "english": "Ten years have passed since then."
+      },
+      {
+        "japanese": "あれ、こんなところにいたの？",
+        "english": "Oh, were you here?"
+      }
     ]
   },
   {
     "word": "あんな",
-    "kanji": [],
-    "meaning": ["such", "that kind of", "like that"],
-    "part_of_speech": "adj-pn",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "あんなことは二度としない。", "en": "I won't do such a thing again." },
-      { "jp": "あんな人が好きだ。", "en": "I like people like that." }
+    "meaning": "such, that kind of (far from both speaker and listener)",
+    "kanji": "あんな",
+    "part_of_speech": "demonstrative adjective",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "あんなに可愛い犬は見たことがない。",
+        "english": "I've never seen such a cute dog."
+      },
+      {
+        "japanese": "あんな話は信じられない。",
+        "english": "I can't believe that kind of story."
+      },
+      {
+        "japanese": "あんなに頑張ったのに失敗した。",
+        "english": "I worked so hard, but I failed."
+      },
+      {
+        "japanese": "あんな所で何をしているんだ？",
+        "english": "What are you doing in a place like that?"
+      },
+      {
+        "japanese": "あんな顔をしてはいけない。",
+        "english": "You shouldn't make a face like that."
+      }
     ]
   },
   {
-    "word": "いい加減にしなさい",
-    "kanji": ["いい加減にしなさい"],
-    "meaning": ["that's enough!", "stop it!", "don't be silly!", "cut it out!"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いい加減にしなさい、もう十分だ。", "en": "That's enough, it's already enough." }
+    "word": "いいかげんにしなさい",
+    "meaning": "That's enough! Stop it! Give me a break!",
+    "kanji": "いい加減にしなさい",
+    "part_of_speech": "phrase / imperative",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いいかげんにしなさい！もう喧嘩はやめなさい。",
+        "english": "That's enough! Stop fighting already."
+      },
+      {
+        "japanese": "ふざけるのもいいかげんにしなさい。",
+        "english": "Stop fooling around!"
+      },
+      {
+        "japanese": "いつまで遊んでるの？いいかげんにしなさい！",
+        "english": "How long are you going to play? That's enough!"
+      },
+      {
+        "japanese": "彼の無責任な態度にいいかげんにしなさいと思った。",
+        "english": "I thought 'that's enough' to his irresponsible attitude."
+      },
+      {
+        "japanese": "いいかげんにしなさい、もう十分だ。",
+        "english": "That's enough, it's already enough."
+      }
     ]
   },
   {
-    "word": "いい年をして",
-    "kanji": ["いい年をして"],
-    "meaning": ["at your age", "for someone your age"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いい年をして、そんなことをするなんて。", "en": "To do such a thing at your age!" }
+    "word": "いいとしをして",
+    "meaning": "at your age, for someone your age (implying disapproval or surprise that someone of a certain age is acting childishly or inappropriately)",
+    "kanji": "いい年をして",
+    "part_of_speech": "phrase",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いいとしをして、そんな子供っぽいことをするな。",
+        "english": "At your age, don't do such childish things."
+      },
+      {
+        "japanese": "いいとしをして、まだ親に頼っているのか。",
+        "english": "At your age, are you still relying on your parents?"
+      },
+      {
+        "japanese": "いいとしをして、そんな派手な服を着ている。",
+        "english": "For someone your age, you're wearing such flashy clothes."
+      },
+      {
+        "japanese": "いいとしをして、自分のことは自分でしなさい。",
+        "english": "At your age, do things for yourself."
+      },
+      {
+        "japanese": "いいとしをして、まだ結婚しないのか。",
+        "english": "At your age, are you still not married?"
+      }
     ]
   },
   {
     "word": "いやいや",
-    "kanji": [],
-    "meaning": ["no, no (used to express polite denial or modesty)", "oh no", "not at all"],
-    "part_of_speech": "int, adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "「ありがとう」いやいや、どういたしまして。", "en": "“Thank you.” “No, no, you’re welcome.”" },
-      { "jp": "いえいえ、とんでもないです。", "en": "Oh no, not at all." }
+    "meaning": "no, no (emphatic refusal); grudgingly, unwillingly",
+    "kanji": "いやいや",
+    "part_of_speech": "adverb / interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いやいや、そんなことはありません。",
+        "english": "No, no, that's not the case at all."
+      },
+      {
+        "japanese": "彼は嫌々ながら手伝った。",
+        "english": "He helped grudgingly."
+      },
+      {
+        "japanese": "いやいや、お構いなく。",
+        "english": "No, no, don't bother."
+      },
+      {
+        "japanese": "いやいや、私は結構です。",
+        "english": "No, no, I'm fine."
+      },
+      {
+        "japanese": "嫌々仕事をするのは辛い。",
+        "english": "It's hard to work unwillingly."
+      }
     ]
   },
   {
-    "word": "疑わしい",
-    "kanji": ["疑わしい"],
-    "meaning": ["suspicious", "dubious", "questionable", "shady", "fishy", "indecent", "unbecoming"],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "word": "いえいえ",
+    "meaning": "no, no (polite, humble negation/denial/modesty)",
+    "kanji": "いえいえ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いえいえ、とんでもないことです。",
+        "english": "No, no, not at all (it's nothing)."
+      },
+      {
+        "japanese": "お礼を言われたが、いえいえと謙遜した。",
+        "english": "I was thanked, but I humbly said, 'no, no'."
+      },
+      {
+        "japanese": "いえいえ、お気になさらないでください。",
+        "english": "No, no, please don't worry about it."
+      },
+      {
+        "japanese": "いえいえ、こちらこそ感謝しています。",
+        "english": "No, no, it is I who am grateful."
+      },
+      {
+        "japanese": "いえいえ、そんなことありませんよ。",
+        "english": "No, no, that's not true at all."
+      }
+    ]
+  },
+  {
+    "word": "いかがわしい",
+    "meaning": "suspicious, dubious, shady, questionable, indecent",
+    "kanji": "胡散臭い / 訝しい",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "いかがわしい",
-      "plain_past": "いかがわしかった",
-      "plain_negative": "いかがわしくない",
-      "plain_negative_past": "いかがわしくなかった",
+      "past": "いかがわしかった",
+      "negative": "いかがわしくない",
+      "past_negative": "いかがわしくなかった",
       "polite": "いかがわしいです",
       "polite_past": "いかがわしかったです",
       "polite_negative": "いかがわしくありません",
       "polite_negative_past": "いかがわしくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "いかがわしい店には入らない方がいい。", "en": "You'd better not enter suspicious shops." },
-      { "jp": "彼の話はいかがわしい。", "en": "His story is dubious." }
+    "examples": [
+      {
+        "japanese": "彼はいかがわしい商売をしている。",
+        "english": "He's involved in a shady business."
+      },
+      {
+        "japanese": "いかがわしい雰囲気の店だった。",
+        "english": "It was a shop with a dubious atmosphere."
+      },
+      {
+        "japanese": "その情報はかなりいかがわしい。",
+        "english": "That information is quite questionable."
+      },
+      {
+        "japanese": "いかがわしい誘いには乗らない方がいい。",
+        "english": "It's better not to fall for indecent invitations."
+      },
+      {
+        "japanese": "彼の態度は何かいかがわしかった。",
+        "english": "His attitude was somewhat suspicious."
+      }
     ]
   },
   {
     "word": "いかす",
-    "kanji": [],
-    "meaning": ["to be smart", "to be cool", "to be sharp", "to be stylish"],
-    "part_of_speech": "v5s",
-    "all_8_forms": {
+    "meaning": "to make good use of, to utilize; to be cool, to be stylish (colloquial)",
+    "kanji": "生かす / 活かす",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いかす",
-      "plain_past": "いかした",
-      "plain_negative": "いかさない",
-      "plain_negative_past": "いかさなかった",
+      "past": "いかした",
+      "negative": "いかさない",
+      "past_negative": "いかさなかった",
       "polite": "いかします",
       "polite_past": "いかしました",
       "polite_negative": "いかしません",
       "polite_negative_past": "いかしませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼のファッションは本当にイカしている。", "en": "His fashion is really cool." },
-      { "jp": "この音楽、マジでイカすよ！", "en": "This music is seriously awesome!" },
-      { "jp": "彼女はイカす車に乗っていた。", "en": "She was driving a stylish car." }
+    "examples": [
+      {
+        "japanese": "彼の才能をいかすべきだ。",
+        "english": "He should make good use of his talent."
+      },
+      {
+        "japanese": "そのアイデアはいかすね。",
+        "english": "That idea is cool, isn't it?"
+      },
+      {
+        "japanese": "この経験をいかして次につなげたい。",
+        "english": "I want to utilize this experience and connect it to the next step."
+      },
+      {
+        "japanese": "彼のファッションはいつもいかしている。",
+        "english": "His fashion is always stylish."
+      },
+      {
+        "japanese": "古いものをいかして新しいものを作る。",
+        "english": "Make new things by utilizing old ones."
+      }
     ]
   },
   {
-    "word": "いかなる場合でも",
-    "kanji": ["いかなる場合でも"],
-    "meaning": ["in any case", "under any circumstances", "no matter what"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いかなる場合でも、諦めてはいけない。", "en": "You must not give up under any circumstances." }
+    "word": "いかなるばあいでも",
+    "meaning": "in any case, under any circumstances, no matter what the circumstances",
+    "kanji": "いかなる場合でも",
+    "part_of_speech": "phrase",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いかなる場合でも、諦めてはいけない。",
+        "english": "In any case, you must not give up."
+      },
+      {
+        "japanese": "いかなる場合でも、安全が最優先だ。",
+        "english": "Under any circumstances, safety is the top priority."
+      },
+      {
+        "japanese": "いかなる場合でも、約束は守るべきだ。",
+        "english": "No matter what the circumstances, promises should be kept."
+      },
+      {
+        "japanese": "いかなる場合でも、この情報は秘密にしてください。",
+        "english": "In any case, please keep this information confidential."
+      },
+      {
+        "japanese": "いかなる場合でも、彼は冷静に対応する。",
+        "english": "He responds calmly under any circumstances."
+      }
     ]
   },
   {
-    "word": "如何にも",
-    "kanji": ["如何にも"],
-    "meaning": ["indeed", "truly", "surely", "no doubt", "quite", "very", "as expected", "as one would expect"],
-    "part_of_speech": "adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いかにも彼らしい考えだ。", "en": "It's truly a thought typical of him." },
-      { "jp": "いかにもプロらしい技だった。", "en": "It was indeed a professional-like technique." }
+    "word": "いかにも",
+    "meaning": "indeed, truly, as expected, by all appearances",
+    "kanji": "如何にも",
+    "part_of_speech": "adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いかにも彼らしい考えだ。",
+        "english": "It's indeed a thought typical of him."
+      },
+      {
+        "japanese": "いかにも天才といった風貌だ。",
+        "english": "By all appearances, he looks like a genius."
+      },
+      {
+        "japanese": "いかにも美味しそうなケーキ。",
+        "english": "A truly delicious-looking cake."
+      },
+      {
+        "japanese": "いかにも彼が言いそうなことだ。",
+        "english": "That's exactly what he would say."
+      },
+      {
+        "japanese": "いかにも日本らしい景色だ。",
+        "english": "It's indeed a very Japanese landscape."
+      }
     ]
   },
   {
-    "word": "幾つも",
-    "kanji": ["幾つも"],
-    "meaning": ["any number of", "many"],
-    "part_of_speech": "adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "幾つもの問題がある。", "en": "There are many problems." },
-      { "jp": "幾つも質問された。", "en": "I was asked many questions." }
+    "word": "いくつも",
+    "meaning": "many (things, times), several",
+    "kanji": "幾つも",
+    "part_of_speech": "quantity adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いくつも質問があります。",
+        "english": "I have several questions."
+      },
+      {
+        "japanese": "いくつもの困難を乗り越えてきた。",
+        "english": "I've overcome many difficulties."
+      },
+      {
+        "japanese": "この店にはいくつも種類のパンがある。",
+        "english": "This shop has many kinds of bread."
+      },
+      {
+        "japanese": "いくつも課題が残っている。",
+        "english": "Several issues remain."
+      },
+      {
+        "japanese": "彼女はいくつも賞を受賞した。",
+        "english": "She received many awards."
+      }
     ]
   },
   {
     "word": "いけない",
-    "kanji": [],
-    "meaning": [
-      "must not do",
-      "must not be",
-      "bad",
-      "wrong",
-      "no good",
-      "unacceptable",
-      "naughty",
-      "wicked",
-      "regrettable",
-      "sorry",
-      "too bad",
-      "oh dear"
-    ],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "meaning": "bad, wrong, improper; must not do, cannot do (as a prohibition or inability)",
+    "kanji": "いけない",
+    "part_of_speech": "adjective (i-adjective) / auxiliary verb",
+    "conjugations": {
       "plain": "いけない",
-      "plain_past": "いけなかった",
-      "plain_negative": "いけなくない",
-      "plain_negative_past": "いけなくなかった",
-      "polite": "いけないです",
-      "polite_past": "いけなかったです",
-      "polite_negative": "いけなくありません",
-      "polite_negative_past": "いけなくありませんでした"
+      "past": "いけなかった",
+      "negative": "いけない",
+      "past_negative": "いけなかった",
+      "polite": "いけません",
+      "polite_past": "いけませんでした",
+      "polite_negative": "いけません",
+      "polite_negative_past": "いけませんでした"
     },
-    "example_sentences": [
-      { "jp": "そんなことをしてはいけない。", "en": "You must not do such a thing." },
-      { "jp": "ああ、いけない！財布を忘れた。", "en": "Oh, no! I forgot my wallet." }
+    "examples": [
+      {
+        "japanese": "そんなことをしてはいけない。",
+        "english": "You must not do such a thing."
+      },
+      {
+        "japanese": "これはまずい、いけない！",
+        "english": "This is bad, oh no!"
+      },
+      {
+        "japanese": "嘘をついてはいけない。",
+        "english": "You must not lie."
+      },
+      {
+        "japanese": "時間がなくて、もういけない。",
+        "english": "I don't have time, I can't do it anymore."
+      },
+      {
+        "japanese": "彼の態度はとてもいけなかった。",
+        "english": "His attitude was very bad."
+      }
     ]
   },
   {
     "word": "いごっそう",
-    "kanji": [],
-    "meaning": ["stubborn person (Kochi dialect)", "man of strong will", "man of spirit"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "彼は土佐のいごっそうだ。", "en": "He's a true Tosa 'igossou' [stubborn, spirited person]." }
+    "meaning": "stubborn and uncompromising man (Tosa dialect, often positive connotation of strength/integrity)",
+    "kanji": "いごっそう",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "土佐にはいごっそうと呼ばれる男が多い。",
+        "english": "There are many men called 'igosso' in Tosa."
+      },
+      {
+        "japanese": "彼はいごっそうだから、自分の意見を曲げない。",
+        "english": "He's an igosso, so he won't change his opinion."
+      },
+      {
+        "japanese": "いごっそうの気質が彼を成功させた。",
+        "english": "His igosso temperament led him to success."
+      },
+      {
+        "japanese": "昔ながらのいごっそうの職人だ。",
+        "english": "He's an old-fashioned igosso craftsman."
+      },
+      {
+        "japanese": "いごっそうは頑固だが信頼できる。",
+        "english": "Igosso are stubborn but trustworthy."
+      }
     ]
   },
   {
-    "word": "居座",
-    "kanji": ["居座"],
-    "meaning": ["now", "at last", "at this very moment", "when it comes to", "in case of"],
-    "part_of_speech": "adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いざという時が来た。", "en": "The critical moment has come." },
-      { "jp": "いざとなれば私がやる。", "en": "If it comes to it, I'll do it." }
+    "word": "いざ",
+    "meaning": "now, at this moment, come (exclamation to urge action); when it comes to...",
+    "kanji": "いざ",
+    "part_of_speech": "adverb / interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いざ、出発！",
+        "english": "Now, let's depart!"
+      },
+      {
+        "japanese": "いざという時に頼りになる。",
+        "english": "He's reliable when it comes down to it (in an emergency)."
+      },
+      {
+        "japanese": "いざ尋常に勝負！",
+        "english": "Now, let's fight fair!"
+      },
+      {
+        "japanese": "いざとなれば、私も手伝うよ。",
+        "english": "If it comes to it, I'll help too."
+      },
+      {
+        "japanese": "いざ鎌倉という時が来た。",
+        "english": "The time has come for a crucial moment (like going to Kamakura)."
+      }
     ]
   },
   {
     "word": "いざこざ",
-    "kanji": [],
-    "meaning": ["trouble", "dispute", "quarrel", "strife"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "家族間のいざこざが絶えない。", "en": "Family disputes are incessant." }
+    "meaning": "trouble, quarrel, dispute, squabble",
+    "kanji": "いざこざ",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "彼らはいざこざが絶えない。",
+        "english": "They are constantly having quarrels."
+      },
+      {
+        "japanese": "ちょっとしたいざこざがあった。",
+        "english": "There was a minor dispute."
+      },
+      {
+        "japanese": "いざこざを避けるために話し合った。",
+        "english": "We talked to avoid trouble."
+      },
+      {
+        "japanese": "家族のいざこざは尽きない。",
+        "english": "Family squabbles are endless."
+      },
+      {
+        "japanese": "些細ないざこざから大きな喧嘩になった。",
+        "english": "A small dispute escalated into a big fight."
+      }
     ]
   },
   {
     "word": "いじいじ",
-    "kanji": [],
-    "meaning": ["hesitantly", "fidgeting", "tinkering (with something, for pleasure)"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "いじいじ",
-      "plain_past": "いじいじした",
-      "plain_negative": "いじいじしない",
-      "plain_negative_past": "いじいじしなかった",
+    "meaning": "hesitantly, timidly, nervously (often implying a lack of confidence or indecisiveness)",
+    "kanji": "いじいじ",
+    "part_of_speech": "adverb (to する verb)",
+    "conjugations": {
+      "plain": "いじいじする",
+      "past": "いじいじした",
+      "negative": "いじいじしない",
+      "past_negative": "いじいじしなかった",
       "polite": "いじいじします",
       "polite_past": "いじいじしました",
       "polite_negative": "いじいじしません",
       "polite_negative_past": "いじいじしませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼はいつもいじいじしている。", "en": "He's always fidgeting." },
-      { "jp": "いじいじと返事をためらった。", "en": "He hesitated to answer." }
+    "examples": [
+      {
+        "japanese": "彼はいつもいじいじしている。",
+        "english": "He's always hesitating nervously."
+      },
+      {
+        "japanese": "いじいじせずに、はっきり言いなさい。",
+        "english": "Don't be timid, say it clearly."
+      },
+      {
+        "japanese": "発表の前はいじいじしてしまう。",
+        "english": "Before a presentation, I get nervous."
+      },
+      {
+        "japanese": "いじいじした態度では何も進まない。",
+        "english": "Nothing will progress with a hesitant attitude."
+      },
+      {
+        "japanese": "彼女はいじいじして本心を言わなかった。",
+        "english": "She hesitated and didn't say her true feelings."
+      }
     ]
   },
   {
-    "word": "委縮",
-    "kanji": ["委縮"],
-    "meaning": [
-      "to be timid",
-      "to cower",
-      "to be diffident",
-      "to feel small",
-      "to shrink away",
-      "to be disheartened",
-      "to be dispirited"
-    ],
-    "part_of_speech": "v1",
-    "all_8_forms": {
+    "word": "いじける",
+    "meaning": "to cower, to shrink (from shyness or fear), to become timid/withdrawn",
+    "kanji": "いじける",
+    "part_of_speech": "verb (ichidan verb)",
+    "conjugations": {
       "plain": "いじける",
-      "plain_past": "いじけた",
-      "plain_negative": "いじけない",
-      "plain_negative_past": "いじけなかった",
+      "past": "いじけた",
+      "negative": "いじけない",
+      "past_negative": "いじけなかった",
       "polite": "いじけます",
       "polite_past": "いじけました",
       "polite_negative": "いじけません",
       "polite_negative_past": "いじけませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼は人前ではいじけてしまう。", "en": "He becomes timid in front of people." },
-      { "jp": "寒さで体がすっかりいじけた。", "en": "My body was completely shriveled from the cold." }
+    "examples": [
+      {
+        "japanese": "叱られて、子供はいじけてしまった。",
+        "english": "After being scolded, the child cowered."
+      },
+      {
+        "japanese": "彼は人前ではいじけてしまう。",
+        "english": "He shrinks in front of people."
+      },
+      {
+        "japanese": "いじめられていじけるな。",
+        "english": "Don't become withdrawn because you're being bullied."
+      },
+      {
+        "japanese": "寒いので、猫がいじけている。",
+        "english": "The cat is cowering because it's cold."
+      },
+      {
+        "japanese": "彼は失敗するとすぐいじける。",
+        "english": "He immediately becomes timid when he fails."
+      }
     ]
   },
   {
     "word": "いじましい",
-    "kanji": [],
-    "meaning": ["miserable", "pitiable", "wretched", "mean", "stingy", "greedy"],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "meaning": "miserable, pathetic, pitiful (often implying meanness or smallness of character)",
+    "kanji": "いじましい",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "いじましい",
-      "plain_past": "いじましかった",
-      "plain_negative": "いじましくない",
-      "plain_negative_past": "いじましくなかった",
+      "past": "いじましかった",
+      "negative": "いじましくない",
+      "past_negative": "いじましくなかった",
       "polite": "いじましいです",
       "polite_past": "いじましかったです",
       "polite_negative": "いじましくありません",
       "polite_negative_past": "いじましくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "いじましい生活を送っている。", "en": "He's leading a miserable life." }
+    "examples": [
+      {
+        "japanese": "そんなにいじましい考え方をするな。",
+        "english": "Don't have such a miserable way of thinking."
+      },
+      {
+        "japanese": "彼の言い訳はいじましかった。",
+        "english": "His excuse was pathetic."
+      },
+      {
+        "japanese": "いじましい行為でしかない。",
+        "english": "It's nothing but a pathetic act."
+      },
+      {
+        "japanese": "いじましい争いはやめよう。",
+        "english": "Let's stop the petty arguments."
+      },
+      {
+        "japanese": "彼のいじましい行動にがっかりした。",
+        "english": "I was disappointed by his mean behavior."
+      }
+    ]
+  },
+  {
+    "word": "いぢましい",
+    "meaning": "miserable, pathetic, pitiful (older or less common variant of いじましい)",
+    "kanji": "いぢましい",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
+      "plain": "いぢましい",
+      "past": "いぢましかった",
+      "negative": "いぢましくない",
+      "past_negative": "いぢましくなかった",
+      "polite": "いぢましいです",
+      "polite_past": "いぢましかったりです",
+      "polite_negative": "いぢましくありません",
+      "polite_negative_past": "いぢましくありませんでした"
+    },
+    "examples": [
+      {
+        "japanese": "いぢましい態度をとるな。",
+        "english": "Don't take such a pathetic attitude."
+      },
+      {
+        "japanese": "それは本当にいぢましい話だ。",
+        "english": "That's truly a miserable story."
+      },
+      {
+        "japanese": "彼のいぢましい言動に腹が立った。",
+        "english": "I got angry at his pitiful words and actions."
+      },
+      {
+        "japanese": "いぢましいまねはしない方がいい。",
+        "english": "It's better not to do anything so mean."
+      },
+      {
+        "japanese": "いぢましい行為に及んだ。",
+        "english": "He resorted to a pathetic act."
+      }
     ]
   },
   {
     "word": "いじらしい",
-    "kanji": [],
-    "meaning": ["innocent", "sweet", "charming", "pathetic", "pitiful"],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "meaning": "innocent, sweet, endearing, touching, pathetic (in a sympathetic way)",
+    "kanji": "いじらしい",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "いじらしい",
-      "plain_past": "いじらしかった",
-      "plain_negative": "いじらしくない",
-      "plain_negative_past": "いじらしくなかった",
+      "past": "いじらしかった",
+      "negative": "いじらしくない",
+      "past_negative": "いじらしくなかった",
       "polite": "いじらしいです",
       "polite_past": "いじらしかったです",
       "polite_negative": "いじらしくありません",
       "polite_negative_past": "いじらしくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "いじらしい子供の姿。", "en": "The sweet figure of a child." },
-      { "jp": "健気に頑張る姿がいじらしい。", "en": "Her courageous effort is moving." }
+    "examples": [
+      {
+        "japanese": "子供のいじらしい姿に涙が出た。",
+        "english": "Tears came to my eyes at the child's endearing appearance."
+      },
+      {
+        "japanese": "彼女のいじらしい努力に感動した。",
+        "english": "I was moved by her touching efforts."
+      },
+      {
+        "japanese": "いじらしい願い事を聞いてあげた。",
+        "english": "I granted his innocent wish."
+      },
+      {
+        "japanese": "病気の母を看病するいじらしい娘。",
+        "english": "A touching daughter caring for her sick mother."
+      },
+      {
+        "japanese": "彼のいじらしい一生懸命な姿。",
+        "english": "His sweet, earnest demeanor."
+      }
     ]
   },
   {
     "word": "いじりまわす",
-    "kanji": [],
-    "meaning": ["to tamper with", "to fiddle with", "to play about with", "to manipulate"],
-    "part_of_speech": "v5s",
-    "all_8_forms": {
+    "meaning": "to fiddle with, to tinker with, to mess around with (often with negative connotation of clumsiness or unnecessary handling)",
+    "kanji": "弄り回す",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いじりまわす",
-      "plain_past": "いじりまわした",
-      "plain_negative": "いじりまわさない",
-      "plain_negative_past": "いじりまわさなかった",
+      "past": "いじりまわした",
+      "negative": "いじりまわさない",
+      "past_negative": "いじりまわさなかった",
       "polite": "いじりまわします",
       "polite_past": "いじりまわしました",
       "polite_negative": "いじりまわしません",
       "polite_negative_past": "いじりまわしませんでした"
     },
-    "example_sentences": [
-      { "jp": "機械をいじりまわすのはやめなさい。", "en": "Stop tampering with the machine." },
-      { "jp": "彼はいつも携帯をいじりまわしている。", "en": "He's always fiddling with his phone." }
+    "examples": [
+      {
+        "japanese": "パソコンをいじりまわして壊してしまった。",
+        "english": "I fiddled with the computer and broke it."
+      },
+      {
+        "japanese": "人の物をいじりまわすな。",
+        "english": "Don't mess around with other people's things."
+      },
+      {
+        "japanese": "彼はいつも機械をいじりまわしている。",
+        "english": "He's always tinkering with machines."
+      },
+      {
+        "japanese": "書類をいじりまわして散らかした。",
+        "english": "I messed up the documents by fiddling with them."
+      },
+      {
+        "japanese": "髪をいじりまわす癖がある。",
+        "english": "He has a habit of messing with his hair."
+      }
     ]
   },
   {
-    "word": "磯々",
-    "kanji": ["磯々"],
-    "meaning": ["cheerfully", "eagerly", "with alacrity"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "いそいそ",
-      "plain_past": "いそいそした",
-      "plain_negative": "いそいそしない",
-      "plain_negative_past": "いそいそしなかった",
+    "word": "いそいそ",
+    "meaning": "cheerfully, eagerly, in high spirits (when preparing to do something)",
+    "kanji": "いそいそ",
+    "part_of_speech": "adverb (to する verb)",
+    "conjugations": {
+      "plain": "いそいそする",
+      "past": "いそいそした",
+      "negative": "いそいそしない",
+      "past_negative": "いそいそしなかった",
       "polite": "いそいそします",
       "polite_past": "いそいそしました",
       "polite_negative": "いそいそしません",
       "polite_negative_past": "いそいそしませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼女はいそいそと出かけていった。", "en": "She went out cheerfully." }
+    "examples": [
+      {
+        "japanese": "彼女はいそいそと出かけて行った。",
+        "english": "She cheerfully went out."
+      },
+      {
+        "japanese": "子供たちはいそいそと遠足の準備をした。",
+        "english": "The children eagerly prepared for the excursion."
+      },
+      {
+        "japanese": "いそいそと買い物に出かけた。",
+        "english": "I went shopping in high spirits."
+      },
+      {
+        "japanese": "彼はデートの前にいそいそしていた。",
+        "english": "He was in high spirits before his date."
+      },
+      {
+        "japanese": "いそいそとプレゼントを開けた。",
+        "english": "I eagerly opened the present."
+      }
     ]
   },
   {
-    "word": "イチャイチャ",
-    "kanji": [],
-    "meaning": ["flirting", "cooing", "being lovey-dovey"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "イチャイチャ",
-      "plain_past": "イチャイチャした",
-      "plain_negative": "イチャイチャしない",
-      "plain_negative_past": "イチャイチャしなかった",
-      "polite": "イチャイチャします",
-      "polite_past": "イチャイチャしました",
-      "polite_negative": "イチャイチャしません",
-      "polite_negative_past": "イチャイチャしませんでした"
+    "word": "いちゃいちゃ",
+    "meaning": "flirting, spooning, canoodling (often with a somewhat negative or disapproving connotation)",
+    "kanji": "いちゃいちゃ",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "いちゃいちゃする",
+      "past": "いちゃいちゃした",
+      "negative": "いちゃいちゃしない",
+      "past_negative": "いちゃいちゃしなかった",
+      "polite": "いちゃいちゃします",
+      "polite_past": "いちゃいちゃしました",
+      "polite_negative": "いちゃいちゃしません",
+      "polite_negative_past": "いちゃいちゃしませんでした"
     },
-    "example_sentences": [
-      { "jp": "人前でイチャイチャするのはやめてほしい。", "en": "I wish they'd stop being lovey-dovey in public." }
+    "examples": [
+      {
+        "japanese": "公園でカップルがいちゃいちゃしていた。",
+        "english": "A couple was canoodling in the park."
+      },
+      {
+        "japanese": "人前でいちゃいちゃするのはやめなさい。",
+        "english": "Stop flirting in front of people."
+      },
+      {
+        "japanese": "彼らはいちゃいちゃしてばかりいる。",
+        "english": "They are always spooning."
+      },
+      {
+        "japanese": "いちゃいちゃする声が聞こえた。",
+        "english": "I heard the sound of flirting."
+      },
+      {
+        "japanese": "彼らはいつもいちゃいちゃしている。",
+        "english": "They are always being lovey-dovey."
+      }
     ]
   },
   {
     "word": "いちゃつく",
-    "kanji": [],
-    "meaning": ["to flirt", "to coo", "to be lovey-dovey", "to neck", "to fool around"],
-    "part_of_speech": "v5k",
-    "all_8_forms": {
+    "meaning": "to flirt, to spoon, to neck, to canoodle (similar to いちゃいちゃ but more verbal/physical action implied)",
+    "kanji": "いちゃつく",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いちゃつく",
-      "plain_past": "いちゃついた",
-      "plain_negative": "いちゃつかない",
-      "plain_negative_past": "いちゃつかなかった",
+      "past": "いちゃついた",
+      "negative": "いちゃつかない",
+      "past_negative": "いちゃつかなかった",
       "polite": "いちゃつきます",
       "polite_past": "いちゃつきました",
       "polite_negative": "いちゃつきません",
       "polite_negative_past": "いちゃつきませんでした"
     },
-    "example_sentences": [
-      { "jp": "公園でカップルがいちゃついていた。", "en": "A couple was being lovey-dovey in the park." }
+    "examples": [
+      {
+        "japanese": "カフェで彼らはいちゃついていた。",
+        "english": "They were flirting in the cafe."
+      },
+      {
+        "japanese": "人前でいちゃつくのは控えるべきだ。",
+        "english": "You should refrain from spooning in public."
+      },
+      {
+        "japanese": "彼女は彼といちゃつくのが好きだ。",
+        "english": "She likes to flirt with him."
+      },
+      {
+        "japanese": "公園のベンチでいちゃつくカップル。",
+        "english": "A couple canoodling on a park bench."
+      },
+      {
+        "japanese": "彼はいつも可愛い子といちゃついている。",
+        "english": "He's always flirting with cute girls."
+      }
     ]
   },
   {
     "word": "いつもより",
-    "kanji": ["いつもより"],
-    "meaning": ["more than usual", "than always"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "今日はいつもより早く起きた。", "en": "I woke up earlier than usual today." },
-      { "jp": "彼はいつもより元気だった。", "en": "He was more energetic than usual." }
+    "meaning": "more than usual, more than always",
+    "kanji": "いつもより",
+    "part_of_speech": "phrase",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "今日はいつもより早く起きた。",
+        "english": "Today I woke up earlier than usual."
+      },
+      {
+        "japanese": "彼はいつもより元気がない。",
+        "english": "He's less energetic than usual."
+      },
+      {
+        "japanese": "いつもより多くの宿題が出た。",
+        "english": "More homework was assigned than usual."
+      },
+      {
+        "japanese": "このケーキはいつもより美味しい。",
+        "english": "This cake is more delicious than usual."
+      },
+      {
+        "japanese": "いつもより時間がかかった。",
+        "english": "It took more time than usual."
+      }
     ]
   },
   {
-    "word": "いとも簡単に",
-    "kanji": ["いとも簡単に"],
-    "meaning": ["with the utmost ease", "very easily"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "彼はその問題をいとも簡単に解いた。", "en": "He solved the problem with the utmost ease." }
+    "word": "いともかんたんに",
+    "meaning": "very easily, extremely simply",
+    "kanji": "いとも簡単に",
+    "part_of_speech": "adverbial phrase",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "彼はいともかんたんにその問題を解決した。",
+        "english": "He solved that problem very easily."
+      },
+      {
+        "japanese": "いともかんたんに目標を達成した。",
+        "english": "I achieved the goal extremely simply."
+      },
+      {
+        "japanese": "それは彼にとってはいともかんたんなことだ。",
+        "english": "That is a very easy thing for him."
+      },
+      {
+        "japanese": "いともかんたんに勝つことができた。",
+        "english": "I was able to win very easily."
+      },
+      {
+        "japanese": "彼女はいともかんたんにそれをやってのけた。",
+        "english": "She pulled it off extremely easily."
+      }
     ]
   },
   {
-    "word": "鯔背",
-    "kanji": ["鯔背"],
-    "meaning": [
-      "stylish",
-      "chic",
-      "dashing",
-      "smart",
-      "swaggering (esp. of a Edo period commoner, esp. a fishmonger)"
-    ],
-    "part_of_speech": "adj-na, n",
-    "all_8_forms": {
+    "word": "いなせ",
+    "meaning": "stylish, dashing, chic (often used for men, especially Edo period commoners)",
+    "kanji": "粋な",
+    "part_of_speech": "adjective (na-adjective) / noun",
+    "conjugations": {
       "plain": "いなせ",
-      "plain_past": "いなせだった",
-      "plain_negative": "いなせではない",
-      "plain_negative_past": "いなせではなかった",
+      "past": "いなせだった",
+      "negative": "いなせではない",
+      "past_negative": "いなせではなかった",
       "polite": "いなせです",
       "polite_past": "いなせでした",
       "polite_negative": "いなせではありません",
       "polite_negative_past": "いなせではありませんでした"
     },
-    "example_sentences": [
-      { "jp": "いなせな兄貴。", "en": "A dashing older brother." },
-      { "jp": "彼はいつもいなせな格好をしている。", "en": "He always dresses stylishly." }
+    "examples": [
+      {
+        "japanese": "いなせな兄貴といった感じだ。",
+        "english": "He has a dashing, big-brotherly feel."
+      },
+      {
+        "japanese": "いなせな浴衣姿の男性。",
+        "english": "A man in a stylish yukata."
+      },
+      {
+        "japanese": "彼は江戸っ子らしいいなせな男だ。",
+        "english": "He is a chic man typical of Edo."
+      },
+      {
+        "japanese": "いなせな着こなしが素敵だ。",
+        "english": "His stylish way of dressing is wonderful."
+      },
+      {
+        "japanese": "いなせな声で歌い始めた。",
+        "english": "He started singing with a dashing voice."
+      }
     ]
   },
   {
-    "word": "嘶く",
-    "kanji": ["嘶く"],
-    "meaning": ["to neigh", "to whinny"],
-    "part_of_speech": "v5k",
-    "all_8_forms": {
+    "word": "いななく",
+    "meaning": "to neigh, to whinny (horse)",
+    "kanji": "嘶く",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いななく",
-      "plain_past": "いなないた",
-      "plain_negative": "いななかない",
-      "plain_negative_past": "いななかなかった",
+      "past": "いなないた",
+      "negative": "いななかかない",
+      "past_negative": "いななかかなかった",
       "polite": "いななきます",
       "polite_past": "いななきました",
       "polite_negative": "いななきません",
       "polite_negative_past": "いななきませんでした"
     },
-    "example_sentences": [
-      { "jp": "馬がいなないた。", "en": "The horse neighed." }
+    "examples": [
+      {
+        "japanese": "馬がいなないた。",
+        "english": "The horse neighed."
+      },
+      {
+        "japanese": "遠くから馬がいななく声が聞こえた。",
+        "english": "I heard the sound of a horse neighing from afar."
+      },
+      {
+        "japanese": "雄大な馬がいなないて草原を駆けた。",
+        "english": "A magnificent horse neighed and galloped across the prairie."
+      },
+      {
+        "japanese": "戦闘が始まると馬たちがいななき始めた。",
+        "english": "When the battle began, the horses started to whinny."
+      },
+      {
+        "japanese": "馬はいななきながら走り去った。",
+        "english": "The horse galloped away, neighing."
+      }
     ]
   },
   {
-    "word": "嘶き",
-    "kanji": ["嘶き"],
-    "meaning": ["neigh", "whinny"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "馬のいななきが聞こえた。", "en": "I heard the neigh of a horse." }
+    "word": "いななき",
+    "meaning": "neigh, whinny (sound of a horse)",
+    "kanji": "嘶き",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "馬のいななきが聞こえる。",
+        "english": "The neigh of a horse can be heard."
+      },
+      {
+        "japanese": "そのいななきは力強かった。",
+        "english": "That whinny was powerful."
+      },
+      {
+        "japanese": "遠くから馬のいななきが響いた。",
+        "english": "The neigh of a horse echoed from afar."
+      },
+      {
+        "japanese": "いななきと共に馬は走り出した。",
+        "english": "The horse started running with a whinny."
+      },
+      {
+        "japanese": "あのいななきは彼の愛馬のものだ。",
+        "english": "That neigh belongs to his beloved horse."
+      }
     ]
   },
   {
-    "word": "苛める",
-    "kanji": ["苛める"],
-    "meaning": ["to torment", "to bully", "to persecute", "to harass", "to pick on"],
-    "part_of_speech": "v5r",
-    "all_8_forms": {
+    "word": "いびる",
+    "meaning": "to bully, to torment, to harass, to tease (in a malicious way)",
+    "kanji": "苛める",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いびる",
-      "plain_past": "いびった",
-      "plain_negative": "いびらない",
-      "plain_negative_past": "いびらなかった",
+      "past": "いびった",
+      "negative": "いびらない",
+      "past_negative": "いびらなかった",
       "polite": "いびります",
       "polite_past": "いびりました",
       "polite_negative": "いびりません",
       "polite_negative_past": "いびりませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼はいじめっ子にいびられた。", "en": "He was bullied by the bully." },
-      { "jp": "部下をいびる上司。", "en": "A boss who harasses his subordinates." }
+    "examples": [
+      {
+        "japanese": "彼はいつも弱い者をいびる。",
+        "english": "He always bullies the weak."
+      },
+      {
+        "japanese": "上司に毎日いびられている。",
+        "english": "I'm being harassed by my boss every day."
+      },
+      {
+        "japanese": "子供をいびるのは許されない行為だ。",
+        "english": "Bullying children is an unforgivable act."
+      },
+      {
+        "japanese": "彼はいびられても黙っていた。",
+        "english": "He remained silent even when tormented."
+      },
+      {
+        "japanese": "新人をいびるのはやめろ。",
+        "english": "Stop harassing the new recruits."
+      }
     ]
   },
   {
     "word": "いやに",
-    "kanji": [],
-    "meaning": ["awfully", "terribly", "unusually", "strangely", "unpleasantly", "annoyingly"],
-    "part_of_speech": "adv",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "今日はやけに寒い。", "en": "It's unusually cold today." },
-      { "jp": "いやに静かだ。", "en": "It's strangely quiet." }
+    "meaning": "awfully, terribly, unusually, strangely (often implying something negative or unexpected)",
+    "kanji": "厭に",
+    "part_of_speech": "adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "今日はやけに静かだ。",
+        "english": "It's awfully quiet today."
+      },
+      {
+        "japanese": "いやに機嫌がいいね。",
+        "english": "You're unusually cheerful, aren't you?"
+      },
+      {
+        "japanese": "彼の態度は何だか嫌に感じた。",
+        "english": "His attitude felt strangely unpleasant."
+      },
+      {
+        "japanese": "いやに喉が渇く。",
+        "english": "I'm terribly thirsty."
+      },
+      {
+        "japanese": "いやに派手な格好をしている。",
+        "english": "He's dressed in an unusually flashy way."
+      }
     ]
   },
   {
     "word": "いらっしゃい",
-    "kanji": [],
-    "meaning": [
-      "welcome (to a customer)",
-      "come in",
-      "come on in",
-      "please come",
-      "please go",
-      "please be (honorific, polite)"
-    ],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "いらっしゃいませ！", "en": "Welcome!" },
-      { "jp": "さあ、いらっしゃい。", "en": "Come on in." }
+    "meaning": "Welcome! Come in! (informal, often used to close friends or family)",
+    "kanji": "いらっしゃい",
+    "part_of_speech": "interjection / imperative",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いらっしゃい、よく来たね。",
+        "english": "Welcome, good to see you."
+      },
+      {
+        "japanese": "どうぞ、いらっしゃい。",
+        "english": "Please, come in."
+      },
+      {
+        "japanese": "「いらっしゃい」と笑顔で迎えられた。",
+        "english": "I was greeted with a smile and 'Welcome'."
+      },
+      {
+        "japanese": "またいつでもいらっしゃい。",
+        "english": "Come again anytime."
+      },
+      {
+        "japanese": "いらっしゃい、お茶でもいかが？",
+        "english": "Welcome, how about some tea?"
+      }
+    ]
+  },
+  {
+    "word": "いらしゃい",
+    "meaning": "Welcome! Come in! (variant or mispronunciation of いらっしゃい)",
+    "kanji": "いらしゃい",
+    "part_of_speech": "interjection / imperative",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いらしゃいませ、お客様。",
+        "english": "Welcome, customer."
+      },
+      {
+        "japanese": "早く、いらしゃいよ。",
+        "english": "Hurry, come on in."
+      },
+      {
+        "japanese": "「いらしゃい」という声が聞こえた。",
+        "english": "I heard a voice saying 'Welcome'."
+      },
+      {
+        "japanese": "いらしゃい、どうぞお入りください。",
+        "english": "Welcome, please come in."
+      },
+      {
+        "japanese": "またのお越しをいらしゃい。",
+        "english": "Please come again (a slightly informal way)."
+      }
     ]
   },
   {
     "word": "いらっしゃいませ",
-    "kanji": [],
-    "meaning": ["welcome (to a customer, very polite)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "お店に入ると「いらっしゃいませ」と声をかけられた。", "en": "When I entered the shop, I was greeted with \"Welcome!\"" }
+    "meaning": "Welcome! May I help you? (formal, used by shop/restaurant staff)",
+    "kanji": "いらっしゃいませ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "店員が「いらっしゃいませ」と声をかけた。",
+        "english": "The store clerk said, 'Welcome!'"
+      },
+      {
+        "japanese": "デパートに入ると「いらっしゃいませ」の声が響く。",
+        "english": "When you enter a department store, the sound of 'Welcome!' echoes."
+      },
+      {
+        "japanese": "お客様に「いらっしゃいませ」と挨拶する。",
+        "english": "Greet customers with 'Welcome!'."
+      },
+      {
+        "japanese": "いらっしゃいませ、ごゆっくりどうぞ。",
+        "english": "Welcome, please take your time."
+      },
+      {
+        "japanese": "空港で「いらっしゃいませ」と迎えられた。",
+        "english": "I was greeted with 'Welcome' at the airport."
+      }
+    ]
+  },
+  {
+    "word": "いらしゃいませ",
+    "meaning": "Welcome! May I help you? (variant or mispronunciation of いらっしゃいませ)",
+    "kanji": "いらしゃいませ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "いらしゃいませ、何名様ですか？",
+        "english": "Welcome, how many people?"
+      },
+      {
+        "japanese": "食堂で「いらしゃいませ」と迎えられた。",
+        "english": "I was greeted with 'Welcome' at the cafeteria."
+      },
+      {
+        "japanese": "いらしゃいませ、本日はどのようなご用件で？",
+        "english": "Welcome, what can I do for you today?"
+      },
+      {
+        "japanese": "笑顔で「いらしゃいませ」と迎えてくれた。",
+        "english": "They greeted me with a smile and 'Welcome'."
+      },
+      {
+        "japanese": "コンビニでいつも「いらしゃいませ」と聞く。",
+        "english": "I always hear 'Welcome' at the convenience store."
+      }
     ]
   },
   {
     "word": "いらっしゃる",
-    "kanji": [],
-    "meaning": [
-      "to be (honorific of いる)",
-      "to come (honorific of くる)",
-      "to go (honorific of いく)"
-    ],
-    "part_of_speech": "v5r",
-    "all_8_forms": {
+    "meaning": "to come, to go, to be (honorific of 来る, 行く, いる)",
+    "kanji": "いらっしゃる",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "いらっしゃる",
-      "plain_past": "いらっしゃった",
-      "plain_negative": "いらっしゃらない",
-      "plain_negative_past": "いらっしゃらなかった",
+      "past": "いらっしゃった",
+      "negative": "いらっしゃらない",
+      "past_negative": "いらっしゃらなかった",
       "polite": "いらっしゃいます",
       "polite_past": "いらっしゃいました",
       "polite_negative": "いらっしゃいません",
       "polite_negative_past": "いらっしゃいませんでした"
     },
-    "example_sentences": [
-      { "jp": "先生がいらっしゃいました。", "en": "The teacher has come." },
-      { "jp": "どちらへいらっしゃいますか。", "en": "Where are you going?" }
+    "examples": [
+      {
+        "japanese": "先生はもういらっしゃいましたか？",
+        "english": "Has the teacher already come?"
+      },
+      {
+        "japanese": "社長はいらっしゃいますか？",
+        "english": "Is the president here (present)?"
+      },
+      {
+        "japanese": "どちらにいらっしゃいますか？",
+        "english": "Where are you going? (polite)"
+      },
+      {
+        "japanese": "どうぞ、こちらにいらっしゃい。",
+        "english": "Please come this way."
+      },
+      {
+        "japanese": "お客様がもういらっしゃいましたよ。",
+        "english": "The customer has already arrived."
+      }
     ]
   },
   {
     "word": "うじうじ",
-    "kanji": [],
-    "meaning": ["hesitantly", "indecisively", "fidgeting", "grumbling to oneself"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うじうじ",
-      "plain_past": "うじうじした",
-      "plain_negative": "うじうじしない",
-      "plain_negative_past": "うじうじしなかった",
+    "meaning": "hesitantly, timidly, indecisively, waveringly (often with a negative connotation of weakness)",
+    "kanji": "うじうじ",
+    "part_of_speech": "adverb (to する verb)",
+    "conjugations": {
+      "plain": "うじうじする",
+      "past": "うじうじした",
+      "negative": "うじうじしない",
+      "past_negative": "うじうじしなかった",
       "polite": "うじうじします",
       "polite_past": "うじうじしました",
       "polite_negative": "うじうじしません",
       "polite_negative_past": "うじうじしませんでした"
     },
-    "example_sentences": [
-      { "jp": "いつもうじうじして決断できない。", "en": "He's always indecisive and can't make up his mind." }
+    "examples": [
+      {
+        "japanese": "いつまでもウジウジしていないで、決断しなさい。",
+        "english": "Don't keep wavering, make a decision."
+      },
+      {
+        "japanese": "彼は何をするにもうじうじしている。",
+        "english": "He's always indecisive about everything he does."
+      },
+      {
+        "japanese": "うじうじと考え込んでも仕方ない。",
+        "english": "There's no point in thinking timidly."
+      },
+      {
+        "japanese": "うじうじした態度はやめろ。",
+        "english": "Stop with that hesitant attitude."
+      },
+      {
+        "japanese": "彼は告白するのをうじうじしていた。",
+        "english": "He was timid about confessing."
+      }
     ]
   },
   {
     "word": "うじゃうじゃ",
-    "kanji": [],
-    "meaning": ["swarming", "teeming", "crawling (with insects, etc.)"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うじゃうじゃ",
-      "plain_past": "うじゃうじゃした",
-      "plain_negative": "うじゃうじゃしない",
-      "plain_negative_past": "うじゃうじゃしなかった",
-      "polite": "うじゃうじゃします",
-      "polite_past": "うじゃうじゃしました",
-      "polite_negative": "うじゃうじゃしません",
-      "polite_negative_past": "うじゃうじゃしませんでした"
-    },
-    "example_sentences": [
-      { "jp": "虫がうじゃうじゃいる。", "en": "There are insects crawling all over the place." }
+    "meaning": "swarming, teeming (with small, often unpleasant, things); squirming, wriggling",
+    "kanji": "うじゃうじゃ",
+    "part_of_speech": "onomatopoeia / adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "虫がうじゃうじゃ湧いていた。",
+        "english": "Insects were swarming."
+      },
+      {
+        "japanese": "その沼にはカエルがうじゃうじゃいる。",
+        "english": "Frogs are teeming in that swamp."
+      },
+      {
+        "japanese": "テレビにうじゃうじゃと人が映っていた。",
+        "english": "Many people were shown squirming on TV (crowded)."
+      },
+      {
+        "japanese": "ゴミ捨て場にはハエがうじゃうじゃいた。",
+        "english": "Flies were swarming at the garbage dump."
+      },
+      {
+        "japanese": "ペットショップにはハムスターがうじゃうじゃいた。",
+        "english": "There were hamsters teeming in the pet shop."
+      }
     ]
   },
   {
     "word": "うずうず",
-    "kanji": [],
-    "meaning": ["itching to do something", "eager to do something", "antsy", "fidgety", "prickling (sensation)"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うずうず",
-      "plain_past": "うずうずした",
-      "plain_negative": "うずうずしない",
-      "plain_negative_past": "うずうずしなかった",
+    "meaning": "itching (to do something), tingling with anticipation, eager to do something",
+    "kanji": "うずうず",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うずうずする",
+      "past": "うずうずした",
+      "negative": "うずうずしない",
+      "past_negative": "うずうずしなかった",
       "polite": "うずうずします",
       "polite_past": "うずうずしました",
       "polite_negative": "うずうずしません",
       "polite_negative_past": "うずうずしませんでした"
     },
-    "example_sentences": [
-      { "jp": "旅行に行きたくてうずうずしている。", "en": "I'm itching to go on a trip." },
-      { "jp": "足がうずうずする。", "en": "My legs are tingling." }
+    "examples": [
+      {
+        "japanese": "旅行に行くのがうずうずしている。",
+        "english": "I'm itching to go on a trip."
+      },
+      {
+        "japanese": "早く話したくてうずうずする。",
+        "english": "I'm tingling with anticipation, wanting to talk soon."
+      },
+      {
+        "japanese": "彼女は早く新しい仕事に取り掛かりたくてうずうずしていた。",
+        "english": "She was eager to start her new job quickly."
+      },
+      {
+        "japanese": "足がうずうずして、じっとしていられない。",
+        "english": "My legs are itching, I can't stay still."
+      },
+      {
+        "japanese": "試合に出たくてうずうずする。",
+        "english": "I'm eager to play in the match."
+      }
     ]
   },
   {
     "word": "うぞうぞ",
-    "kanji": [],
-    "meaning": ["wriggling (like worms)", "squirming", "swarming"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うぞうぞ",
-      "plain_past": "うぞうぞした",
-      "plain_negative": "うぞうぞしない",
-      "plain_negative_past": "うぞうぞしなかった",
-      "polite": "うぞうぞします",
-      "polite_past": "うぞうぞしました",
-      "polite_negative": "うぞうぞしません",
-      "polite_negative_past": "うぞうぞしませんでした"
-    },
-    "example_sentences": [
-      { "jp": "虫がうぞうぞと出てきた。", "en": "Insects came wriggling out." }
+    "meaning": "squirming, wriggling, crawling (of many small creatures, similar to うじゃうじゃ but often implies slow, somewhat unsettling movement)",
+    "kanji": "うぞうぞ",
+    "part_of_speech": "onomatopoeia / adverb",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "ミミズが地面をうぞうぞ動いている。",
+        "english": "Earthworms are squirming on the ground."
+      },
+      {
+        "japanese": "腐った果物に虫がうぞうぞ湧いていた。",
+        "english": "Insects were crawling on the rotten fruit."
+      },
+      {
+        "japanese": "暗闇の中で何かがうぞうぞと動く気配がした。",
+        "english": "I sensed something wriggling in the darkness."
+      },
+      {
+        "japanese": "うぞうぞと蠢く生物は苦手だ。",
+        "english": "I don't like squirming creatures."
+      },
+      {
+        "japanese": "水たまりにオタマジャクシがうぞうぞいた。",
+        "english": "Tadpoles were squirming in the puddle."
+      }
     ]
   },
   {
     "word": "うだうだ",
-    "kanji": [],
-    "meaning": ["grumbling", "complaining", "dawdling", "loitering", "rambling (on and on)"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うだうだ",
-      "plain_past": "うだうだした",
-      "plain_negative": "うだうだしない",
-      "plain_negative_past": "うだうだしなかった",
+    "meaning": "idling, loafing around, dawdling; rambling, grumbling, complaining aimlessly",
+    "kanji": "うだうだ",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うだうだする",
+      "past": "うだうだした",
+      "negative": "うだうだしない",
+      "past_negative": "うだうだしなかった",
       "polite": "うだうだします",
       "polite_past": "うだうだしました",
       "polite_negative": "うだうだしません",
       "polite_negative_past": "うだうだしませんでした"
     },
-    "example_sentences": [
-      { "jp": "いつもうだうだ文句を言っている。", "en": "He's always grumbling." }
+    "examples": [
+      {
+        "japanese": "いつまでうだうだしているんだ？",
+        "english": "How long are you going to keep dawdling?"
+      },
+      {
+        "japanese": "文句ばかりうだうだ言うな。",
+        "english": "Don't just keep rambling complaints."
+      },
+      {
+        "japanese": "休日は家でうだうだ過ごした。",
+        "english": "I spent the holiday loafing around at home."
+      },
+      {
+        "japanese": "彼がうだうだ言うのでうんざりした。",
+        "english": "I was fed up with him rambling on and on."
+      },
+      {
+        "japanese": "うだうだ話しているうちに時間が過ぎた。",
+        "english": "Time passed while we were rambling."
+      }
     ]
   },
   {
     "word": "うっかり",
-    "kanji": [],
-    "meaning": ["carelessly", "thoughtlessly", "inadvertently"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うっかり",
-      "plain_past": "うっかりした",
-      "plain_negative": "うっかりしない",
-      "plain_negative_past": "うっかりしなかった",
+    "meaning": "carelessly, inadvertently, thoughtlessly; by accident",
+    "kanji": "うっかり",
+    "part_of_speech": "adverb (to する verb)",
+    "conjugations": {
+      "plain": "うっかりする",
+      "past": "うっかりした",
+      "negative": "うっかりしない",
+      "past_negative": "うっかりしなかった",
       "polite": "うっかりします",
       "polite_past": "うっかりしました",
       "polite_negative": "うっかりしません",
       "polite_negative_past": "うっかりしませんでした"
     },
-    "example_sentences": [
-      { "jp": "うっかり鍵を忘れた。", "en": "I carelessly forgot my key." },
-      { "jp": "うっかり口を滑らせた。", "en": "I inadvertently let something slip." }
+    "examples": [
+      {
+        "japanese": "うっかり鍵をかけ忘れた。",
+        "english": "I carelessly forgot to lock the door."
+      },
+      {
+        "japanese": "うっかり口を滑らせてしまった。",
+        "english": "I inadvertently let something slip."
+      },
+      {
+        "japanese": "うっかり電車を乗り過ごした。",
+        "english": "I accidentally rode past my station."
+      },
+      {
+        "japanese": "うっかりミスをしてしまった。",
+        "english": "I made a careless mistake."
+      },
+      {
+        "japanese": "うっかり宿題を忘れてしまった。",
+        "english": "I inadvertently forgot my homework."
+      }
     ]
   },
   {
     "word": "うとうと",
-    "kanji": [],
-    "meaning": ["dozing lightly", "nodding off"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うとうと",
-      "plain_past": "うとうとした",
-      "plain_negative": "うとうとしない",
-      "plain_negative_past": "うとうとしなかった",
+    "meaning": "dozing, nodding off, half-asleep",
+    "kanji": "うとうと",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うとうとする",
+      "past": "うとうとした",
+      "negative": "うとうとしない",
+      "past_negative": "うとうとしなかった",
       "polite": "うとうとします",
       "polite_past": "うとうとしました",
       "polite_negative": "うとうとしません",
       "polite_negative_past": "うとうとしませんでした"
     },
-    "example_sentences": [
-      { "jp": "電車の中でうとうと眠ってしまった。", "en": "I dozed off on the train." }
+    "examples": [
+      {
+        "japanese": "授業中にうとうとしてしまった。",
+        "english": "I dozed off during class."
+      },
+      {
+        "japanese": "ソファでうとうと眠る。",
+        "english": "To sleep, half-asleep, on the sofa."
+      },
+      {
+        "japanese": "彼は電車の揺れでうとうとした。",
+        "english": "He nodded off due to the train's swaying."
+      },
+      {
+        "japanese": "うとうとしながら本を読んだ。",
+        "english": "I read a book while half-asleep."
+      },
+      {
+        "japanese": "暖かくてうとうととしてくる。",
+        "english": "It's warm and I'm starting to feel drowsy."
+      }
+    ]
+  },
+  {
+    "word": "うとっと",
+    "meaning": "dozing off, nodding off (more sudden or brief than うとうと, often indicating a quick, sleepy movement)",
+    "kanji": "うとっと",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うとっとする",
+      "past": "うとっとした",
+      "negative": "うとっとしない",
+      "past_negative": "うとっとしなかった",
+      "polite": "うとっとします",
+      "polite_past": "うとっとしました",
+      "polite_negative": "うとっとしません",
+      "polite_negative_past": "うとっとしませんでした"
+    },
+    "examples": [
+      {
+        "japanese": "疲れていて、ついウトットしてしまった。",
+        "english": "I was tired and just dozed off quickly."
+      },
+      {
+        "japanese": "彼の話を聞きながら、うとっと眠りかけた。",
+        "english": "While listening to his story, I almost nodded off."
+      },
+      {
+        "japanese": "夜遅くまで起きていたので、会議中うとっとした。",
+        "english": "I was up late, so I nodded off during the meeting."
+      },
+      {
+        "japanese": "猫が日なたでうとっとしている。",
+        "english": "The cat is dozing off in the sun."
+      },
+      {
+        "japanese": "気づいたら、うとっとしていた。",
+        "english": "Before I knew it, I had nodded off."
+      }
     ]
   },
   {
     "word": "うねうね",
-    "kanji": [],
-    "meaning": ["winding", "meandering", "twisting", "wiggling"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うねうね",
-      "plain_past": "うねうねした",
-      "plain_negative": "うねうねしない",
-      "plain_negative_past": "うねうねしなかった",
+    "meaning": "winding, meandering, wriggling, coiling",
+    "kanji": "うねうね",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うねうねする",
+      "past": "うねうねした",
+      "negative": "うねうねしない",
+      "past_negative": "うねうねしなかった",
       "polite": "うねうねします",
       "polite_past": "うねうねしました",
       "polite_negative": "うねうねしません",
       "polite_negative_past": "うねうねしませんでした"
     },
-    "example_sentences": [
-      { "jp": "道がうねうねと続いている。", "en": "The road winds on and on." }
+    "examples": [
+      {
+        "japanese": "川がうねうねと流れている。",
+        "english": "The river is flowing in a winding manner."
+      },
+      {
+        "japanese": "蛇がうねうねと草の中を進む。",
+        "english": "A snake wriggles through the grass."
+      },
+      {
+        "japanese": "うねうねした道が続く。",
+        "english": "A meandering road continues."
+      },
+      {
+        "japanese": "彼は体をうねうねさせて踊った。",
+        "english": "He danced, wriggling his body."
+      },
+      {
+        "japanese": "木の根が地面をうねうねと這っている。",
+        "english": "Tree roots are coiling along the ground."
+      }
     ]
   },
   {
     "word": "うねり",
-    "kanji": ["うねり"],
-    "meaning": ["wave", "undulation", "swell", "coil", "twist"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "海のうねりが大きい。", "en": "The swell of the ocean is big." }
+    "meaning": "swell (of waves), undulation, curve, coil",
+    "kanji": "うねり",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "海のうねりが大きい。",
+        "english": "The swell of the sea is large."
+      },
+      {
+        "japanese": "道のうねりが続く。",
+        "english": "The undulation of the road continues."
+      },
+      {
+        "japanese": "彼の歌声には独特のうねりがある。",
+        "english": "His singing voice has a unique undulation."
+      },
+      {
+        "japanese": "木の幹には自然なうねりがある。",
+        "english": "The tree trunk has a natural coil."
+      },
+      {
+        "japanese": "波のうねりが船を揺らした。",
+        "english": "The swell of the waves rocked the boat."
+      }
     ]
   },
   {
     "word": "うろうろ",
-    "kanji": [],
-    "meaning": ["wandering aimlessly", "loitering", "prowling"],
-    "part_of_speech": "adv, adv-to, vs",
-    "all_8_forms": {
-      "plain": "うろうろ",
-      "plain_past": "うろうろした",
-      "plain_negative": "うろうろしない",
-      "plain_negative_past": "うろうろできなかった",
+    "meaning": "wandering aimlessly, loitering, hanging around",
+    "kanji": "うろうろ",
+    "part_of_speech": "onomatopoeia / adverb (to する verb)",
+    "conjugations": {
+      "plain": "うろうろする",
+      "past": "うろうろした",
+      "negative": "うろうろしない",
+      "past_negative": "うろうろしなかった",
       "polite": "うろうろします",
       "polite_past": "うろうろしました",
       "polite_negative": "うろうろしません",
-      "polite_negative_past": "うろうろできませんでした"
+      "polite_negative_past": "うろうろしませんでした"
     },
-    "example_sentences": [
-      { "jp": "不審者が家の周りをうろうろしている。", "en": "A suspicious person is loitering around the house." }
+    "examples": [
+      {
+        "japanese": "知らない場所でうろうろした。",
+        "english": "I wandered aimlessly in an unfamiliar place."
+      },
+      {
+        "japanese": "怪しい男が家の周りをうろうろしている。",
+        "english": "A suspicious man is loitering around the house."
+      },
+      {
+        "japanese": "目的もなく街をうろうろする。",
+        "english": "To wander aimlessly around town."
+      },
+      {
+        "japanese": "彼はずっと部屋の中をうろうろしていた。",
+        "english": "He was wandering around the room the whole time."
+      },
+      {
+        "japanese": "犬が庭をうろうろしている。",
+        "english": "The dog is wandering around the garden."
+      }
     ]
   },
   {
     "word": "うろたえる",
-    "kanji": [],
-    "meaning": ["to be flustered", "to be confused", "to panic", "to lose one's composure"],
-    "part_of_speech": "v1",
-    "all_8_forms": {
+    "meaning": "to be flustered, to be bewildered, to lose one's head",
+    "kanji": "狼狽える",
+    "part_of_speech": "verb (ichidan verb)",
+    "conjugations": {
       "plain": "うろたえる",
-      "plain_past": "うろたえた",
-      "plain_negative": "うろたえない",
-      "plain_negative_past": "うろたえなかった",
+      "past": "うろたえた",
+      "negative": "うろたえない",
+      "past_negative": "うろたえなかった",
       "polite": "うろたえます",
       "polite_past": "うろたえました",
       "polite_negative": "うろたえません",
       "polite_negative_past": "うろたえませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼は予期せぬ事態にうろたえた。", "en": "He was flustered by the unexpected situation." }
+    "examples": [
+      {
+        "japanese": "突然の事態にうろたえてしまった。",
+        "english": "I was flustered by the sudden situation."
+      },
+      {
+        "japanese": "彼女はどんな時も決してうろたえない。",
+        "english": "She never loses her head no matter the situation."
+      },
+      {
+        "japanese": "災害時にうろたえてはいけない。",
+        "english": "You must not be bewildered during a disaster."
+      },
+      {
+        "japanese": "質問されてうろたえる彼。",
+        "english": "He who gets flustered when asked questions."
+      },
+      {
+        "japanese": "うろたえることなく冷静に対処した。",
+        "english": "He handled it calmly without getting flustered."
+      }
     ]
   },
   {
     "word": "うん",
-    "kanji": [],
-    "meaning": ["uh-huh", "yeah", "yes (casual)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "「これ、食べる？」うん、食べる。", "en": "\"Will you eat this?\" \"Uh-huh, I'll eat it.\"" }
+    "meaning": "yes, uh-huh (informal agreement/acknowledgment)",
+    "kanji": "うん",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "うん、わかった。",
+        "english": "Uh-huh, I understand."
+      },
+      {
+        "japanese": "「うん」と答えた。",
+        "english": "I answered 'yes'."
+      },
+      {
+        "japanese": "うん、そうだね。",
+        "english": "Yeah, that's right."
+      },
+      {
+        "japanese": "うん、頑張るよ。",
+        "english": "Yeah, I'll do my best."
+      },
+      {
+        "japanese": "うん、それでいいよ。",
+        "english": "Yep, that's fine."
+      }
+    ]
+  },
+  {
+    "word": "うむ",
+    "meaning": "yes, uh-huh (slightly more formal or contemplative than うん); to produce, to give birth (written 産む)",
+    "kanji": "うむ / 産む",
+    "part_of_speech": "interjection / verb (godan verb)",
+    "conjugations": {
+      "plain": "うむ",
+      "past": "うんだ",
+      "negative": "うまない",
+      "past_negative": "うまなかった",
+      "polite": "うみます",
+      "polite_past": "うみました",
+      "polite_negative": "うみません",
+      "polite_negative_past": "うみませんでした"
+    },
+    "examples": [
+      {
+        "japanese": "うむ、良い考えだ。",
+        "english": "Hm, that's a good idea."
+      },
+      {
+        "japanese": "彼女は子供を産んだ。",
+        "english": "She gave birth to a child."
+      },
+      {
+        "japanese": "この木はたくさんの実を産む。",
+        "english": "This tree produces many fruits."
+      },
+      {
+        "japanese": "うむ、その通りだ。",
+        "english": "Indeed, that's correct."
+      },
+      {
+        "japanese": "彼は新しいアイデアをうんだ。",
+        "english": "He produced a new idea."
+      }
+    ]
+  },
+  {
+    "word": "ううむ",
+    "meaning": "hmm, uhm (pondering, hesitation, or slight dissatisfaction)",
+    "kanji": "ううむ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "ううむ、どうしたものか。",
+        "english": "Hmm, what should I do?"
+      },
+      {
+        "japanese": "ううむ、納得がいかない。",
+        "english": "Uhm, I'm not convinced."
+      },
+      {
+        "japanese": "彼はううむと唸った。",
+        "english": "He groaned 'uhm'."
+      },
+      {
+        "japanese": "ううむ、難しい問題だ。",
+        "english": "Hmm, it's a difficult problem."
+      },
+      {
+        "japanese": "ううむ、まだ決められない。",
+        "english": "Uhm, I still can't decide."
+      }
     ]
   },
   {
     "word": "うんこ",
-    "kanji": [],
-    "meaning": ["poop", "feces"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "犬がうんこをした。", "en": "The dog pooped." }
+    "meaning": "poop, feces (childish, informal)",
+    "kanji": "うんこ",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "犬がうんこをした。",
+        "english": "The dog pooped."
+      },
+      {
+        "japanese": "子供がうんこしたいと言った。",
+        "english": "The child said he wanted to poop."
+      },
+      {
+        "japanese": "うんこのにおいがする。",
+        "english": "It smells like poop."
+      },
+      {
+        "japanese": "うんこを片付けた。",
+        "english": "I cleaned up the poop."
+      },
+      {
+        "japanese": "うんこを踏んでしまった。",
+        "english": "I accidentally stepped on poop."
+      }
     ]
   },
   {
     "word": "うんざり",
-    "kanji": [],
-    "meaning": ["fed up", "bored", "disgusted", "weary"],
-    "part_of_speech": "adj-na, adv, vs",
-    "all_8_forms": {
-      "plain": "うんざり",
-      "plain_past": "うんざりした",
-      "plain_negative": "うんざりしない",
-      "plain_negative_past": "うんざりしなかった",
+    "meaning": "fed up, bored, tired of, disgusted",
+    "kanji": "うんざり",
+    "part_of_speech": "adjective (suru-verb form) / adverb",
+    "conjugations": {
+      "plain": "うんざりする",
+      "past": "うんざりした",
+      "negative": "うんざりしない",
+      "past_negative": "うんざりしなかった",
       "polite": "うんざりします",
       "polite_past": "うんざりしました",
       "polite_negative": "うんざりしません",
       "polite_negative_past": "うんざりしませんでした"
     },
-    "example_sentences": [
-      { "jp": "彼の愚痴にはもううんざりだ。", "en": "I'm already fed up with his complaints." }
+    "examples": [
+      {
+        "japanese": "彼の長い話にはうんざりだ。",
+        "english": "I'm fed up with his long stories."
+      },
+      {
+        "japanese": "毎日同じ作業でうんざりする。",
+        "english": "I get bored with the same task every day."
+      },
+      {
+        "japanese": "うんざりするほど暑い。",
+        "english": "It's disgustingly hot."
+      },
+      {
+        "japanese": "彼の愚痴にはうんざりだ。",
+        "english": "I'm tired of his complaining."
+      },
+      {
+        "japanese": "うんざりしてため息をついた。",
+        "english": "I sighed, fed up."
+      }
     ]
   },
   {
-    "word": "ウンチ",
-    "kanji": [],
-    "meaning": ["poop", "feces (child's language)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "赤ちゃんがウンチをした。", "en": "The baby pooped." }
+    "word": "うんち",
+    "meaning": "poop, feces (childish, slightly more polite than うんこ)",
+    "kanji": "うんち",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "赤ちゃんがうんちをした。",
+        "english": "The baby pooped."
+      },
+      {
+        "japanese": "犬のうんちを拾う。",
+        "english": "Pick up dog poop."
+      },
+      {
+        "japanese": "うんちがしたい。",
+        "english": "I want to poop."
+      },
+      {
+        "japanese": "トイレでうんちをする。",
+        "english": "Poop in the toilet."
+      },
+      {
+        "japanese": "うんちの絵本を読んだ。",
+        "english": "I read a picture book about poop."
+      }
     ]
   },
   {
     "word": "えい",
-    "kanji": [],
-    "meaning": ["(exclamation of sudden exertion, e.g. when throwing, hitting, etc.)", "hey!", "take that!"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "えい、やー！", "en": "Hey, yah!" }
+    "meaning": "yes, uh-huh (informal, often indicating a quick, decisive agreement); stingray; power, energy (as an exclamation)",
+    "kanji": "えい / 鱏 / 鋭",
+    "part_of_speech": "interjection / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えい、やってしまえ！",
+        "english": "Alright, just do it!"
+      },
+      {
+        "japanese": "水族館で大きなエイを見た。",
+        "english": "I saw a big stingray at the aquarium."
+      },
+      {
+        "japanese": "えい、もう決めた！",
+        "english": "Yes, I've already decided!"
+      },
+      {
+        "japanese": "エイのしっぽには毒がある。",
+        "english": "The stingray's tail has venom."
+      },
+      {
+        "japanese": "えいっと力を込める。",
+        "english": "To put effort in with a 'eitto' (sound of exertion)."
+      }
     ]
   },
   {
     "word": "ええ",
-    "kanji": [],
-    "meaning": ["yes", "yeah", "well", "uh-huh"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "ええ、そうです。", "en": "Yes, that's right." },
-      { "jp": "えー、本当？", "en": "Really?" }
+    "meaning": "yes, okay (polite, slightly more formal than うん, often used by women or in polite conversation)",
+    "kanji": "ええ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "ええ、承知いたしました。",
+        "english": "Yes, I understand."
+      },
+      {
+        "japanese": "「ええ」と頷いた。",
+        "english": "I nodded and said 'yes'."
+      },
+      {
+        "japanese": "ええ、結構です。",
+        "english": "Yes, that's fine."
+      },
+      {
+        "japanese": "ええ、もちろんです。",
+        "english": "Yes, of course."
+      },
+      {
+        "japanese": "お元気ですか？ ええ、おかげさまで。",
+        "english": "How are you? Yes, thanks to you."
+      }
+    ]
+  },
+  {
+    "word": "えー",
+    "meaning": "What?! (surprise, disbelief); Um, er (filler word)",
+    "kanji": "えー",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えー、そうなの？！",
+        "english": "What?! Is that so?!"
+      },
+      {
+        "japanese": "えーと、次の議題は何でしたっけ？",
+        "english": "Um, what was the next agenda item?"
+      },
+      {
+        "japanese": "えー、嘘でしょ？",
+        "english": "What, no way?"
+      },
+      {
+        "japanese": "えー、まだ終わらないの？",
+        "english": "What, it's not over yet?"
+      },
+      {
+        "japanese": "えー、どこに行けばいいんだろう。",
+        "english": "Um, where should I go?"
+      }
+    ]
+  },
+  {
+    "word": "えーー",
+    "meaning": "What?! (more prolonged surprise/disbelief); Um, er (more prolonged filler word)",
+    "kanji": "えーー",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えーー、信じられない！",
+        "english": "Whaaat?! I can't believe it!"
+      },
+      {
+        "japanese": "えーー、もう帰るの？",
+        "english": "Whaaat, are you going home already?"
+      },
+      {
+        "japanese": "えーーっと、何から話そうかな。",
+        "english": "Uhm, where should I start talking?"
+      },
+      {
+        "japanese": "えーー、それは困るなあ。",
+        "english": "Uhm, that's a problem."
+      },
+      {
+        "japanese": "えーー、まさか！",
+        "english": "Whaaat, no way!"
+      }
+    ]
+  },
+  {
+    "word": "えーっ",
+    "meaning": "What?! (stronger surprise/shock)",
+    "kanji": "えーっ",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えーっ、本当に？",
+        "english": "What?! Really?"
+      },
+      {
+        "japanese": "えーっ、そんなことが！",
+        "english": "What?! Something like that happened!"
+      },
+      {
+        "japanese": "えーっ、知らなかった！",
+        "english": "What?! I didn't know!"
+      },
+      {
+        "japanese": "えーっ、まさかそんなはずはない。",
+        "english": "What?! That can't be true."
+      },
+      {
+        "japanese": "えーっ、それは大変だ。",
+        "english": "What?! That's terrible."
+      }
     ]
   },
   {
     "word": "えっと",
-    "kanji": [],
-    "meaning": ["um", "er", "well", "let's see (used when trying to recall something or thinking what to say)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "えっと、次の予定は何でしたっけ。", "en": "Um, what was the next plan again?" }
+    "meaning": "um, er, let me see (filler word when pausing to think)",
+    "kanji": "えっと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えっと、何て言えばいいかな。",
+        "english": "Um, what should I say?"
+      },
+      {
+        "japanese": "えっと、思い出せない。",
+        "english": "Er, I can't remember."
+      },
+      {
+        "japanese": "えっと、質問は何でしたか？",
+        "english": "Um, what was the question?"
+      },
+      {
+        "japanese": "えっと、次の予定は...",
+        "english": "Let me see, the next schedule is..."
+      },
+      {
+        "japanese": "えっと、少々お待ちください。",
+        "english": "Um, please wait a moment."
+      }
+    ]
+  },
+  {
+    "word": "えーと",
+    "meaning": "um, er, well (slightly more prolonged filler word than えっと)",
+    "kanji": "えーと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えーと、つまり…",
+        "english": "Um, in other words..."
+      },
+      {
+        "japanese": "えーと、どう説明したらいいかな。",
+        "english": "Well, how should I explain it?"
+      },
+      {
+        "japanese": "えーと、次の目的地は…",
+        "english": "Um, the next destination is..."
+      },
+      {
+        "japanese": "えーと、何か質問はありますか？",
+        "english": "Uhm, do you have any questions?"
+      },
+      {
+        "japanese": "えーと、ちょっと考えてもいいですか？",
+        "english": "Well, can I think about it for a moment?"
+      }
+    ]
+  },
+  {
+    "word": "えーっと",
+    "meaning": "ummm, errr (even more prolonged filler word, indicating longer thought or hesitation)",
+    "kanji": "えーっと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えーっと、ですね…",
+        "english": "Ummm, well..."
+      },
+      {
+        "japanese": "えーっと、何だっけ？",
+        "english": "Errr, what was it again?"
+      },
+      {
+        "japanese": "えーっと、それは言えないな。",
+        "english": "Ummm, I can't say that."
+      },
+      {
+        "japanese": "えーっと、他に何かありますか？",
+        "english": "Errr, is there anything else?"
+      },
+      {
+        "japanese": "えーっと、ちょっと時間がかかります。",
+        "english": "Ummm, it will take some time."
+      }
+    ]
+  },
+  {
+    "word": "ええと",
+    "meaning": "um, er, well (variant of えーと, often used as a soft start to a sentence)",
+    "kanji": "ええと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "ええと、今日はありがとう。",
+        "english": "Um, thank you for today."
+      },
+      {
+        "japanese": "ええと、お名前は？",
+        "english": "Well, what's your name?"
+      },
+      {
+        "japanese": "ええと、まずはご挨拶から。",
+        "english": "Er, first, let's start with greetings."
+      },
+      {
+        "japanese": "ええと、何かお手伝いできることはありますか？",
+        "english": "Um, is there anything I can help with?"
+      },
+      {
+        "japanese": "ええと、どうしましょうか。",
+        "english": "Well, what should we do?"
+      }
+    ]
+  },
+  {
+    "word": "ええっと",
+    "meaning": "ummm, errr (variant of えーっと, indicating longer thought or hesitation)",
+    "kanji": "ええっと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "ええっと、これで全部です。",
+        "english": "Ummm, that's everything."
+      },
+      {
+        "japanese": "ええっと、ちょっと待ってください。",
+        "english": "Errr, please wait a moment."
+      },
+      {
+        "japanese": "ええっと、次のページを開いてください。",
+        "english": "Ummm, please open the next page."
+      },
+      {
+        "japanese": "ええっと、他に質問はございませんか？",
+        "english": "Errr, are there any other questions?"
+      },
+      {
+        "japanese": "ええっと、もう少し詳しく教えてください。",
+        "english": "Ummm, please tell me a little more in detail."
+      }
+    ]
+  },
+  {
+    "word": "えーーっと",
+    "meaning": "ummmmmm, errrrr (very prolonged filler word, indicating deep thought or significant hesitation)",
+    "kanji": "えーーっと",
+    "part_of_speech": "interjection",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えーーっと、そうですね…",
+        "english": "Ummmmmm, let me see..."
+      },
+      {
+        "japanese": "えーーっと、思い出せないなあ。",
+        "english": "Errrrr, I just can't remember."
+      },
+      {
+        "japanese": "えーーっと、ちょっと複雑なんですが。",
+        "english": "Ummmmmm, it's a bit complicated, but..."
+      },
+      {
+        "japanese": "えーーっと、結論から言うとですね…",
+        "english": "Errrrr, if I speak from the conclusion, well..."
+      },
+      {
+        "japanese": "えーーっと、どう答えたらいいか…",
+        "english": "Ummmmmm, how should I answer..."
+      }
     ]
   },
   {
     "word": "えげつない",
-    "kanji": [],
-    "meaning": ["unscrupulous", "nasty", "dirty", "mean", "harsh", "disagreeable", "vulgar"],
-    "part_of_speech": "adj-i",
-    "all_8_forms": {
+    "meaning": "nasty, vulgar, gross, unprincipled, ruthless",
+    "kanji": "えげつない",
+    "part_of_speech": "adjective (i-adjective)",
+    "conjugations": {
       "plain": "えげつない",
-      "plain_past": "えげつなかった",
-      "plain_negative": "えげつなくない",
-      "plain_negative_past": "えげつなくなかった",
+      "past": "えげつなかった",
+      "negative": "えげつなくない",
+      "past_negative": "えげつなくなかった",
       "polite": "えげつないです",
       "polite_past": "えげつなかったです",
       "polite_negative": "えげつなくありません",
       "polite_negative_past": "えげつなくありませんでした"
     },
-    "example_sentences": [
-      { "jp": "えげつないやり方だ。", "en": "That's an unscrupulous way of doing things." }
+    "examples": [
+      {
+        "japanese": "彼のやり方はえげつない。",
+        "english": "His methods are ruthless."
+      },
+      {
+        "japanese": "えげつない冗談はやめろ。",
+        "english": "Stop with the vulgar jokes."
+      },
+      {
+        "japanese": "えげつない話を聞いてしまった。",
+        "english": "I accidentally heard a nasty story."
+      },
+      {
+        "japanese": "えげつない競争を生き抜く。",
+        "english": "To survive a ruthless competition."
+      },
+      {
+        "japanese": "彼の描く漫画はえげつない。",
+        "english": "The manga he draws is gross."
+      }
     ]
   },
   {
     "word": "えつ",
-    "kanji": [],
-    "meaning": ["(exclamation of surprise, disgust, etc.)", "ugh!", "eww!"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "えつ、何これ？", "en": "Eww, what's this?" }
+    "meaning": "exclamation of joy or surprise (less common); a kind of fish (Conger eel, pike conger - typically 鱧/Hamo or 蝦夷/Ezo)",
+    "kanji": "えつ / 悦",
+    "part_of_speech": "interjection / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "えつ！やったー！",
+        "english": "Yay! I did it!"
+      },
+      {
+        "japanese": "悦に入っている。",
+        "english": "To be delighted/satisfied (idiom)."
+      },
+      {
+        "japanese": "川でえつという魚が捕れた。",
+        "english": "A fish called 'etsu' (e.g., pike conger) was caught in the river."
+      },
+      {
+        "japanese": "えつ！成功したぞ！",
+        "english": "Yay! I succeeded!"
+      },
+      {
+        "japanese": "勝利の悦びに浸る。",
+        "english": "To be immersed in the joy of victory."
+      }
     ]
   },
   {
     "word": "おいでになる",
-    "kanji": ["おいでになる"],
-    "meaning": ["to come", "to go", "to be (honorific of 来る, 行く, いる)"],
-    "part_of_speech": "v5r",
-    "all_8_forms": {
+    "meaning": "to come, to go, to be (honorific of 来る, 行く, いる, less formal than いらっしゃる, more used for superiors/honored guests)",
+    "kanji": "おいでになる",
+    "part_of_speech": "verb (godan verb)",
+    "conjugations": {
       "plain": "おいでになる",
-      "plain_past": "おいでになった",
-      "plain_negative": "おいでにならない",
-      "plain_negative_past": "おいでにならなかった",
+      "past": "おいでになった",
+      "negative": "おいでにならない",
+      "past_negative": "おいでにならなかった",
       "polite": "おいでになります",
       "polite_past": "おいでになりました",
       "polite_negative": "おいでになりません",
       "polite_negative_past": "おいでになりませんでした"
     },
-    "example_sentences": [
-      { "jp": "先生はもうおいでになりましたか。", "en": "Has the teacher already arrived?" }
+    "examples": [
+      {
+        "japanese": "お客様がもうおいでになりました。",
+        "english": "The guest has already arrived."
+      },
+      {
+        "japanese": "先生は会議においでになりますか？",
+        "english": "Will the teacher come to the meeting?"
+      },
+      {
+        "japanese": "どうぞ、こちらにおいでください。",
+        "english": "Please come this way (honorific)."
+      },
+      {
+        "japanese": "社長は今、どちらにおいでですか？",
+        "english": "Where is the president now (honorific)?"
+      },
+      {
+        "japanese": "いつでもおいでになってください。",
+        "english": "Please come anytime."
+      }
     ]
   },
   {
     "word": "おいでやす",
-    "kanji": [],
-    "meaning": ["welcome (Kyoto dialect)", "please come in"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "ようこそおいでやす。", "en": "Welcome." }
+    "meaning": "Welcome! (Kyoto dialect, polite and gentle)",
+    "kanji": "おいでやす",
+    "part_of_speech": "interjection / greeting (Kyoto dialect)",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "お店の人が「おいでやす」と声をかけてくれた。",
+        "english": "The shopkeeper greeted me with 'Welcome' (in Kyoto dialect)."
+      },
+      {
+        "japanese": "京都に行ったら、「おいでやす」と挨拶された。",
+        "english": "When I went to Kyoto, I was greeted with 'Welcome'."
+      },
+      {
+        "japanese": "おいでやす、どうぞお上がりください。",
+        "english": "Welcome, please come in."
+      },
+      {
+        "japanese": "京都の旅館では「おいでやす」と迎えられる。",
+        "english": "At a ryokan in Kyoto, you're welcomed with 'Oideyasu'."
+      },
+      {
+        "japanese": "おいでやす、ゆっくりしていってや。",
+        "english": "Welcome, please relax and stay for a while."
+      }
     ]
   },
   {
     "word": "おい",
-    "kanji": [],
-    "meaning": ["hey!", "oy! (used to call someone's attention)"],
-    "part_of_speech": "int",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "おい、待てよ！", "en": "Hey, wait up!" }
+    "meaning": "Hey! (calling out to someone, often informal or slightly rude); nephew",
+    "kanji": "おい / 甥",
+    "part_of_speech": "interjection / noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "おい、ちょっと待って！",
+        "english": "Hey, wait a minute!"
+      },
+      {
+        "japanese": "私の甥は今年大学生になった。",
+        "english": "My nephew became a university student this year."
+      },
+      {
+        "japanese": "おい、何してるんだ？",
+        "english": "Hey, what are you doing?"
+      },
+      {
+        "japanese": "甥が遊びに来た。",
+        "english": "My nephew came to visit."
+      },
+      {
+        "japanese": "おい、こっちに来い。",
+        "english": "Hey, come here."
+      }
     ]
   },
   {
     "word": "おけさ",
-    "kanji": ["おけさ"],
-    "meaning": ["Okesa (folk dance, esp. Sado Okesa)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "佐渡おけさを踊る。", "en": "To dance Sado Okesa." }
+    "meaning": "Okesa (a type of folk song, especially from Sado Island)",
+    "kanji": "おけさ",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "佐渡おけさの踊りを見た。",
+        "english": "I saw the Sado Okesa dance."
+      },
+      {
+        "japanese": "おけさ節を歌う。",
+        "english": "Sing an Okesa tune."
+      },
+      {
+        "japanese": "おけさの起源は古い。",
+        "english": "The origin of Okesa is old."
+      },
+      {
+        "japanese": "おけさのメロディーは哀愁を帯びている。",
+        "english": "The melody of Okesa has a melancholic tinge."
+      },
+      {
+        "japanese": "おけさの発表会があった。",
+        "english": "There was an Okesa performance."
+      }
     ]
   },
   {
     "word": "おけさぶし",
-    "kanji": ["おけさ節"],
-    "meaning": ["Okesa-bushi (Sado folk song and dance)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "おけさ節を歌う。", "en": "To sing Okesa-bushi." }
+    "meaning": "Okesa tune/melody (a folk song, particularly from Sado Island)",
+    "kanji": "おけさ節",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "民謡の大会でおけさ節が披露された。",
+        "english": "Okesa-bushi was performed at the folk song competition."
+      },
+      {
+        "japanese": "おけさ節は佐渡を代表する歌だ。",
+        "english": "Okesa-bushi is a representative song of Sado."
+      },
+      {
+        "japanese": "おけさ節に合わせて踊る。",
+        "english": "Dance to the Okesa-bushi tune."
+      },
+      {
+        "japanese": "おけさ節の歌詞は島の暮らしを描いている。",
+        "english": "The lyrics of Okesa-bushi depict island life."
+      },
+      {
+        "japanese": "古いレコードでおけさ節を聞いた。",
+        "english": "I listened to Okesa-bushi on an old record."
+      }
     ]
   },
   {
     "word": "おこしやす",
-    "kanji": [],
-    "meaning": ["welcome (Kyoto dialect, polite)"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "どうぞ、おこしやす。", "en": "Please come in, welcome." }
+    "meaning": "Welcome! (Kyoto dialect, honorific and gentle, similar to おいでやす but implies coming/visiting)",
+    "kanji": "おこしやす",
+    "part_of_speech": "interjection / greeting (Kyoto dialect)",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "お店の女将さんが「おこしやす」と迎えてくれた。",
+        "english": "The proprietress of the shop greeted me with 'Welcome' (in Kyoto dialect)."
+      },
+      {
+        "japanese": "ようこそおこしやす。",
+        "english": "Welcome, please come in."
+      },
+      {
+        "japanese": "京都の町家で「おこしやす」と迎えられた。",
+        "english": "I was welcomed with 'Okoshiyasu' at a Kyoto machiya."
+      },
+      {
+        "japanese": "「おこしやす」の言葉が心に響いた。",
+        "english": "The words 'Okoshiyasu' resonated in my heart."
+      },
+      {
+        "japanese": "おこしやす、またのお越しをお待ちしております。",
+        "english": "Welcome, we look forward to your next visit."
+      }
     ]
   },
   {
     "word": "おざなりになる",
-    "kanji": ["おざなりになる"],
-    "meaning": ["to become superficial", "to become perfunctory", "to be neglected"],
-    "part_of_speech": "exp",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "仕事がおざなりになる。", "en": "My work becomes superficial." }
+    "meaning": "to become perfunctory, superficial, or just for formality",
+    "kanji": "お座なりになる",
+    "part_of_speech": "expression / verb (なる-form)",
+    "conjugations": {
+      "plain": "おざなりになる",
+      "past": "おざなりになった",
+      "negative": "おざなりにならない",
+      "past_negative": "おざなりにならなかった",
+      "polite": "おざなりになります",
+      "polite_past": "おざなりになりました",
+      "polite_negative": "おざなりになりません",
+      "polite_negative_past": "おざなりになりませんでした"
+    },
+    "examples": [
+      {
+        "japanese": "彼の返事はおざなりになった。",
+        "english": "His reply became perfunctory."
+      },
+      {
+        "japanese": "最近の会議はおざなりになっている。",
+        "english": "Recent meetings have become just a formality."
+      },
+      {
+        "japanese": "対応がおざなりにならないように気をつけてください。",
+        "english": "Please be careful not to let your response become superficial."
+      },
+      {
+        "japanese": "検討がおざなりになりませんでした。",
+        "english": "The review was not done half-heartedly."
+      },
+      {
+        "japanese": "説明はおざなりになりがちです。",
+        "english": "Explanations tend to become perfunctory."
+      }
     ]
   },
   {
     "word": "おしっこ",
-    "kanji": [],
-    "meaning": ["pee", "urine (child's language)"],
-    "part_of_speech": "n",
-    "all_8_forms": null,
-    "example_sentences": [
-      { "jp": "おしっこがしたい。", "en": "I want to pee." }
+    "meaning": "pee, urine (childish, informal)",
+    "kanji": "おしっこ",
+    "part_of_speech": "noun",
+    "conjugations": {},
+    "examples": [
+      {
+        "japanese": "おしっこに行きたい。",
+        "english": "I want to go pee."
+      },
+      {
+        "japanese": "子供がおしっこを漏らした。",
+        "english": "The child wet himself (peed)."
+      },
+      {
+        "japanese": "犬がおしっこをしている。",
+        "english": "The dog is peeing."
+      },
+      {
+        "japanese": "おしっこの色が変だ。",
+        "english": "The color of my pee is strange."
+      },
+      {
+        "japanese": "夜中におしっこで目が覚めた。",
+        "english": "I woke up in the middle of the night to pee."
+      }
     ]
   }
+]
 ]
