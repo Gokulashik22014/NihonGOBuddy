@@ -1,7 +1,9 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import { getDataRealtedToWord } from "./admin/utils.js";
+import searchRouter from "./routes/search.js"
+import { insertData } from "./admin/utils.js";
+import { entry } from "./sharedValues.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,9 +19,10 @@ app.use(express.static(path.join(__dirname, "../frontend/dist")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
+app.use(searchRouter)
 // console.log(path.join(__dirname, '../frontend/dist/index.html'))
 const PORT = 3001;
-getDataRealtedToWord(0,100)
+// insertData(entry)
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });

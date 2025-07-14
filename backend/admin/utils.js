@@ -31,13 +31,18 @@ export const getDataRealtedToWord = async (start, limit) => {
   });
 };
 
-const insertData = (entries) => {
-  for(var entry in entries){
-    db.insert(entry, (err, newDoc) => {
+export const insertData = (entries) => {
+ entries.map((entry)=>{
+  const value = Object.values(entry).map(item => ({
+  ...item,
+  isSearched: false
+}));
+    db.insert(value, (err, newDoc) => {
       if (err) return console.error("❌ Insert failed:", err);
       console.log("✅ Inserted:", newDoc);
     });
-  }
+    // console.log(entry)
+  })
 };
 
 const findAll = () => {
