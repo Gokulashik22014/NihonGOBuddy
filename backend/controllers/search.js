@@ -15,7 +15,8 @@ const getData = (key,value) => {
   });
 };
 export const searchWord = async (req,res) => {
-    const {word}=req.query
+  const {word}=req.query
+  console.log(word)
   await getData("word",word)
     .then((result) =>{
         if(result.status) res.json({status:true,result:result.result})
