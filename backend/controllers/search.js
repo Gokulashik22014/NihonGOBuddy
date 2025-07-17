@@ -20,6 +20,9 @@ const updateSearchedValue=(word)=>{
       return resolve({status:true,doc})
   }))
 }
+
+
+
 export const searchWord = async (req,res) => {
   var {word,isSearched}=req.query
   if(wanakana.isRomaji(word)){
