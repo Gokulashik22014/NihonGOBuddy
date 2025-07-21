@@ -25,7 +25,7 @@ const Home = () => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search Japanese word..."
+          placeholder="Search Janapese word..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
