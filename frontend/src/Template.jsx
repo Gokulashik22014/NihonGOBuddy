@@ -6,9 +6,7 @@ const Template = () => {
   return (
     <div className="main-container">
       {/* navbar */}
-      <div>
         <Navbar />
-      </div>
       {/* .outlet */}
       <div className="outlet-container">
         <Outlet />

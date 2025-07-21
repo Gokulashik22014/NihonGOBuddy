@@ -1,35 +1,60 @@
-*{
-    margin:0;
-    padding:0;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar-container{
-    display: flex;
-    width: 90%;
-    height: 60px;
-    background: #000;
+
+/* NAVBAR */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-.main-container{
-    width: 100%;
-    height: 100vh;
-    background: yellow;
-    display: flex;
-    flex-direction: column;
+.nav-icons{
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  font-size: 30px;
 }
-.outlet-container{
-    background: red;
-    width: 90%;
-    height: 100vh;
+/* MAIN LAYOUT */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
+
+/* ROUTE OUTLET */
+.outlet-container {
+  background: #ffffff;
+  width: 90%;
+  min-height: 100vh;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ACTIVE LINK */
 a.active {
-  color: crimson;
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-
-/*JapaneseWordCard.css */
-
+/* WORD CARD */
 .word-container {
   padding: 24px;
-  background-color: #f9fafb;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -39,7 +64,12 @@ a.active {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.word-card:hover {
+  transform: translateY(-2px);
 }
 
 .word-header {
@@ -48,51 +78,51 @@ a.active {
 
 .word-title {
   font-size: 24px;
-  font-weight: bold;
-  color: #1f2937;
+  font-weight: 700;
+  color: #111827;
 }
 
 .word-romaji {
   font-size: 16px;
-  color: #9ca3af;
+  color: #6b7280;
   margin-left: 8px;
 }
 
 .word-kanji {
   font-size: 18px;
-  color: #4b5563;
+  color: #374151;
   margin-left: 12px;
 }
 
 .word-meaning {
   font-style: italic;
-  color: #374151;
-  margin-top: 6px;
+  color: #334155;
+  margin-top: 8px;
 }
 
 .word-pos {
   font-size: 14px;
-  font-weight: 500;
-  color: #2563eb;
-  margin-top: 4px;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-top: 6px;
 }
 
-/* Conjugations */
+/* CONJUGATIONS */
 .conjugation-section {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .section-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #374151;
+  color: #1f2937;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 4px;
 }
 
 .conjugation-list {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
   margin-top: 10px;
 }
@@ -117,7 +147,7 @@ a.active {
   font-size: 14px;
 }
 
-/* Examples */
+/* EXAMPLES */
 .example-section {
   margin-top: 24px;
 }
@@ -146,4 +176,165 @@ a.active {
 .example-english {
   font-size: 15px;
   color: #4b5563;
+}
+
+/* DROPDOWN */
+.dropdown-container {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.dropdown-title {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: #111827;
+}
+
+.dropdown-title:hover {
+  color: #2563eb;
+}
+
+.dropdown-arrow {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.dropdown-content ul {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.dropdown-content li {
+  margin-bottom: 6px;
+}
+
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+  transition: border 0.2s;
+}
+
+.search-bar input:focus {
+  border-color: #2563eb;
+}
+
+.search-bar button {
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #1d4ed8;
+}
+
+.result-section {
+  width: 100%;
+  max-width: 700px;
+}
+.bookmark-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Layout the input and search button */
+.search-bar-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input container with cancel button inside */
+.search-bar-b {
+  position: relative;
+  flex: 1;
+}
+
+.search-bar-b input {
+  width: 100%;
+  padding: 10px 36px 10px 12px; /* Add space for '×' on right */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.cancel-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  color: #2563eb;
+}
+
+.search-button {
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #1d4ed8;
+}
+
+.bookmark-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
